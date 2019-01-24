@@ -1,0 +1,219 @@
+%!TEX encoding = IsoLatin
+
+%
+% Exemple de procès-verbal
+% par Pierre Tremblay, Universite Laval
+% modifie par Christian Gagne, Universite Laval
+% % 2011/01/14 - version 1.4
+% modifié par Robert Bergevin, Université Laval
+% 24/11/2011
+% modifié par Jean-Yves Chouinard, Université Laval
+% 2016/01/11
+% modifié par Jean-Yves Chouinard, Université Laval
+% 2017/01/04
+%
+
+%--------------------------------------------------------------------------------------
+%------------------------------------- preambule --------------------------------------
+%--------------------------------------------------------------------------------------
+\documentclass[12pt]{ULojpv}
+
+% Chargement des packages supplementaires
+\usepackage[ansinew]{inputenc}
+\usepackage{pifont}
+
+
+% Definitions des parametres de l'en-tete
+\Cours{GEL--1001 Design I (méthodologie)}             % Nom du cours
+\NumeroEquipe{7}                                     % Numero de l'equipe
+\NomEquipe{Les requins}                               % Nom de l'equipe
+\Objet{Procès-verbal \#2}                                 % Nom du document
+\SujetRencontre{Organisation et planification}             % Sujet de la rencontre
+\DateRencontre{2019/01/24}                            % Date de la rencontre
+\LocalRencontre{PLT--2708}                            % Local de la rencontre
+\HeureRencontre{8h30-10h30}                          % Heure de la rencontre
+
+
+%--------------------------------------------------------------------------------------
+%--------------------------------- corps du document ----------------------------------
+%--------------------------------------------------------------------------------------
+\begin{document}
+\entete
+\begin{enumerate}
+
+% nouveau point
+\item \textbf{Ouverture de la réunion}
+Heure: 8h40
+
+% nouveau point
+\item \textbf{Nomination ou confirmation du président et du secrétaire}
+
+\begin{tabular}{@{}ll}
+   Président: Vincent
+   & Secrétaire: Jérémy
+\end{tabular}
+
+% nouveau point
+\item \textbf{Adoption de l'ordre du jour}
+
+L'ordre du jour proposé est adopté à l'unanimité.
+
+% nouveau point
+\item \textbf{Lecture et adoption du procès-verbal de la réunion du 17 janvier 2019}
+
+Le procès-verbal proposé est adopté à l'unanimité.
+
+% nouveau point
+\item \textbf{Affaires découlant du procès-verbal}
+
+\begin{enumerate}
+
+\item Introduction à l'équipe de travail
+
+\begin{enumerate}
+
+\item Présentation des membres de l'équipe et de leur programme d'étude
+
+Rémi et Vincent sont en GLO, Honoré est en GEL, Ibrahim est en GIF et Jérémy est en GPH.
+
+\end{enumerate}
+
+\item Tutoriel Latex
+
+
+
+\end{enumerate}
+
+
+% nouveau point
+\item \textbf{Points à traiter}
+
+\begin{enumerate}
+
+\item Idées sur le capteur
+
+\begin{enumerate}
+
+\item Options utiles pour la capture des images
+
+Regarder les caméras pour surveiller les chevreuils la nuit. Cela pourrait peut-être nous donner des indices sur comment la caméra fait pour voir la nuit. Regarder comment adapter un tel système pour qu'il soit submersible.
+
+Expressea est une compagnie qui fait des capteurs pour les poissons. On pourrait regarder un peu ce qu'ils font.
+
+Peut-être inclure une caméra standard et une caméra infrarouge pour avoir 2 channels.
+
+Donner une forme de caillou ou un corail pour que ça s'intègre mieux dans l'environnement et que les poissons ne soient pas effrayés, ce qui donnerait une représentation plus précise de la population de poisson.
+
+Ajouter la technologie LIDAR au capteur pour déterminer la distance de l'objet identifié. Le fichier enregistré aura donc 3 données par pixel soit la couleur ou la nuance de gris par pixel de la caméra et la distance.
+
+\item Mobilité du capteur
+
+Selon les spécifications du client, le capteur est fixe.
+
+Par contre, on pourrait ajouter la possibilité de pouvoir faire une rotation sur elle-même pour prendre plusieurs parties de l'environnement ou se réorienter dans le cas d'une perturbation.
+
+\item Choix d'un design de capteur en fonction des différentes considérations demandées par le client
+
+\end{enumerate}
+
+\item Identification des poissons
+
+\begin{enumerate}
+
+\item Méthode de séparation des types de poissons
+
+Pour reconnaître la forme des poissons, on pourrait appliquer un filter de Laplace ou un autre filtre de détection de bord pour détecter la forme du poisson. La distance donnerais un indice pour déterminer la taille réelle du poisson. Puisque tous les fichiers enregistrés auraient la même taille (matrice 100x100x100), cela pourrait être facilement intégrable dans un réseau de neurone.
+
+\item  Capacité du système à distinguer les cinq types
+
+
+\end{enumerate}
+
+\end{enumerate}
+
+
+% nouveau point
+\item \textbf{Divers}
+
+\begin{enumerate}
+
+\item Organisation des ficheirs Latex
+
+Faire un dépôt Github avec tous les membres
+
+\item Trouver un nom d'équipe
+
+Le choix s'est posé sur "Les requins" pour démontrer notre aggressivité en affaires et notre supériorité sur la chaîne alimentaire.
+
+\item Transmission des données
+
+Intégrer une antenne Wifi, bluetooth ou radio pour transmettre les fichiers enregistrés à la caméra vers un centre de contrôle externe sur un ordinateur.
+
+\item Déterminer le nombre de poissons
+
+Il faudrait trouver une méthode statistique adaptée pour déterminer le nombre de poissons total selon le nombre de poissons captés.
+
+\end{enumerate}
+
+
+% nouveau point
+\item \textbf{Répartition des tâches}
+
+\begin{enumerate}
+
+\item Assignation \#1: Rémi et Vincent sont chargés de vérifier la possibilité de la création d'un AI ou un réseau de neurones pour identifier les poissons. Ils regarderont le prix et le temps d'entraînement du AI.
+
+\item Assignation \#2: Toute l'équipe se doit de commencer le Rapport de projet version 0.
+
+\item Assignation \#3: Jérémy, Honoré et Ibrahim doivent faire de la recherche sur le type de caméra utilisé et la possibilité d'intégrer un LIDAR.
+
+\item Assignation \#4: Jérémy est chargé de compléter le PV et de l'envoyer sur le dépôt Git G03.
+
+\item Assignation \#5: Rémi est chargé de faire le diagramme de Gantt (OJ3) du 31 janvier 2019.
+
+\item Assignation \#6: Honoré est chargé de faire l'ordre du jour (OJ3) du 31 janvier 2019.
+
+\item Assignation \#7: Vincent est chargé de créer un groupe Discord pour le groupe.
+
+\end{enumerate}
+
+
+% nouveau point
+\item \textbf{Évaluation de la réunion}
+
+Points individuels ou collectifs à améliorer pour accroître le rendement des réunions d'équipe.
+
+
+% nouveau point
+\item \textbf{Date, heure, lieu et objectif de la prochaine réunion}
+
+\begin{tabular}{@{}lll}
+   Date: 2018/01/31
+   & Heure: 08h30
+   &  Lieu: PLT--2708
+\end{tabular}
+\par
+Description de l'objectif ou des objectifs.
+
+
+% nouveau point
+\item \textbf{Fermeture de la réunion}
+
+Heure: 10h20
+
+
+% nouveau point
+\item \textbf{Étaient présents}
+
+\begin{dinglist}{"33}
+   \item Jérémy
+   \item Vincent
+   \item Ibrahim
+   \item Honoré
+   \item Rémi
+\end{dinglist}
+
+\end{enumerate}
+
+\end{document}
+
