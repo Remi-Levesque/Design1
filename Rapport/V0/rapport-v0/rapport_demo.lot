@@ -1,0 +1,19 @@
+\select@language {french}
+\select@language {french}
+\select@language {french}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces Recommandations typographiques propres aux langues fran\c caise et anglaise. L'ast\'erisque d\'enote celles qui sont prises en compte automatiquement par le package \texttt {babel}.\relax }}{5}{table.caption.4}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Recommandations propres aux langues fran\c caise et anglaise quant \`a l'emplacement des l\'egendes. Notez que ces r\`egles ne sont pas prises en compte par le package \texttt {babel}.\relax }}{5}{table.caption.5}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Exemple de tableau. Liste de prix des mat\'eriaux de r\'ef\'erence au 1 f\'evrier 2006, telle que fournie par les Laboratoires des mines et des sciences min\'erales.\relax }}{7}{table.caption.8}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Exemple de tableau avec cellules multilignes. Illustration de l'usage de la commande \texttt {\textbackslash cellulemultiligne}. Statistiques de contacts satellite-station terrestre pour une p\'eriode de 10~jours.\relax }}{8}{table.caption.9}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Exemple de tableau avec cellules contenant des paragraphes. Illustration de l'usage de \texttt {\textbackslash Z}.\relax }}{9}{table.caption.10}
+\contentsline {table}{\numberline {4.4}{\ignorespaces Les 100~premiers \'el\'ements du tableau p\'eriodique class\'es par ordre alphab\'etique.}}{10}{table.4.4}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces Unit\'es SI de base.\relax }}{16}{table.caption.11}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Unit\'es SI d\'eriv\'ees.\relax }}{17}{table.caption.12}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Unit\'es en dehors du SI, mais en usage avec le SI.\relax }}{18}{table.caption.13}
+\contentsline {table}{\numberline {5.4}{\ignorespaces Pr\'efixes et symboles du Syst\`eme international d'unit\'es (SI). Les pr\'efixes anglais sont les m\^emes que les fran\c cais, en leur retirant toutefois les accents.\relax }}{18}{table.caption.14}
+\addvspace {10\p@ }

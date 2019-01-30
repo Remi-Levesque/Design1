@@ -1,0 +1,50 @@
+\select@language {french}
+\select@language {french}
+\contentsline {chapter}{Table des figures}{iii}{chapter*.2}
+\contentsline {chapter}{Liste des tableaux}{iv}{chapter*.3}
+\select@language {french}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}Rapport technique}{2}{chapter.2}
+\contentsline {section}{\numberline {2.1}Structure}{2}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Pages liminaires}{2}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Corps}{2}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Parties annexes}{3}{subsection.2.1.3}
+\contentsline {section}{\numberline {2.2}Recommandations face \`a la r\'edaction}{3}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Usage de la classe \texttt {ULrapport}}{3}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Utilisation judicieuse des figures}{3}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Emploi de tableaux pertinents}{4}{subsection.2.2.3}
+\contentsline {chapter}{\numberline {3}Recommandations typographiques}{5}{chapter.3}
+\contentsline {chapter}{\numberline {4}Exemples \textlatin {\LaTeX }}{6}{chapter.4}
+\contentsline {section}{\numberline {4.1}Outils de r\'ef\'erences}{6}{section.4.1}
+\contentsline {section}{\numberline {4.2}Exemples d'objets flottants}{6}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Exemples de figures}{6}{subsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.1.1}Objet graphique vectoriel de type PDF}{6}{subsubsection.4.2.1.1}
+\contentsline {subsubsection}{\numberline {4.2.1.2}Objets graphiques binaires de type JPEG}{7}{subsubsection.4.2.1.2}
+\contentsline {subsection}{\numberline {4.2.2}Exemples de tableaux}{7}{subsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.2.1}Tableau simple}{7}{subsubsection.4.2.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2.2}Tableau avec cellules multilignes}{7}{subsubsection.4.2.2.2}
+\contentsline {subsubsection}{\numberline {4.2.2.3}Tableau avec cellules contenant un long texte}{9}{subsubsection.4.2.2.3}
+\contentsline {subsection}{\numberline {4.2.3}Autres tableaux possibles}{9}{subsection.4.2.3}
+\contentsline {subsubsection}{\numberline {4.2.3.1}Tableaux plus larges que le corps du texte}{9}{subsubsection.4.2.3.1}
+\contentsline {subsubsection}{\numberline {4.2.3.2}Tableaux plus longs qu'une page}{10}{subsubsection.4.2.3.2}
+\contentsline {section}{\numberline {4.3}Ouvrages cit\'es et URL}{13}{section.4.3}
+\contentsline {chapter}{\numberline {5}Unit\'es SI et r\`egles d'\'ecriture}{15}{chapter.5}
+\contentsline {section}{\numberline {5.1}Unit\'es accept\'ees}{15}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Unit\'es SI de base}{15}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Unit\'es SI d\'eriv\'ees}{15}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Autres unit\'es en usage}{16}{subsection.5.1.3}
+\contentsline {section}{\numberline {5.2}Pr\'efixes recommand\'es}{16}{section.5.2}
+\contentsline {section}{\numberline {5.3}R\`egles d'\'ecriture}{19}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Unit\'es et leurs symboles}{19}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Expressions alg\'ebriques de symboles d'unit\'es}{19}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Usage des pr\'efixes}{19}{subsection.5.3.3}
+\contentsline {subsection}{\numberline {5.3.4}Choix des pr\'efixes}{20}{subsection.5.3.4}
+\contentsline {subsection}{\numberline {5.3.5}R\`egles d'\'ecriture des valeurs num\'eriques}{20}{subsection.5.3.5}
+\contentsline {subsection}{\numberline {5.3.6}R\`egles d'\'ecriture des valeurs avec unit\'es}{20}{subsection.5.3.6}
+\contentsline {subsection}{\numberline {5.3.7}Conventions pour la pr\'esentation des r\'esultats de mesure}{21}{subsection.5.3.7}
+\contentsline {subsubsection}{\numberline {5.3.7.1}Notation des r\'esultats avec incertitude}{21}{subsubsection.5.3.7.1}
+\contentsline {subsubsection}{\numberline {5.3.7.2}Nombre de chiffres significatifs}{22}{subsubsection.5.3.7.2}
+\contentsline {subsubsection}{\numberline {5.3.7.3}Pr\'ecision de l'incertitude}{22}{subsubsection.5.3.7.3}
+\contentsline {subsubsection}{\numberline {5.3.7.4}R\`egles d'arrondi}{23}{subsubsection.5.3.7.4}
+\contentsline {chapter}{Bibliographie}{24}{chapter*.15}
+\contentsline {chapter}{\numberline {A}Liste des sigles et des acronymes}{25}{appendix.A}

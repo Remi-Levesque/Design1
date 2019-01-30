@@ -1,0 +1,97 @@
+%!TEX encoding = IsoLatin
+
+%
+% Exemple de rapport
+% par Pierre Tremblay, Universite Laval
+% modifié par Christian Gagne, Universite Laval
+% 14/01/2011 - version 1.3
+% modifié par Robert Bergevin, Université Laval
+% 24/11/2011
+% modifié par Jean-Yves Chouinard, Université Laval
+% 11/01/2016
+% modifié par Jean-Yves Chouinard, Université Laval
+% 04/01/2017
+%
+
+%
+% Modele d'organisation d'un projet LaTeX 
+% rapport/      dossier racine et fichier principal
+% rapport/fig   fichiers des figures
+% rapport/tex   autres fichiers .tex
+%
+
+% ** Preambule **
+%
+% Ajouter les options au besoin :
+%    - "ULlof" pour inclure la liste des figures, requis si "\begin{figure}" utilise
+%    - "ULlot" pour inclure la liste des tableaux, requis si "\begin{table}" utilise
+%
+\documentclass[12pt,ULlof,ULlot]{ULrapport}
+
+% Chargement des packages supplementaires (si absent de la classe)
+\usepackage[ansinew]{inputenc}
+\usepackage[autolanguage]{numprint}
+\usepackage{icomma}
+%\usepackage[options]{nom_du_package}
+
+% Definition d'une commande pour presenter des cellules multilignes dans un tableau
+\newcommand{\cellulemultiligne}[1]{\begin{tabular}{@{}c@{}}#1\end{tabular}}
+
+% Definition de colonnes en mode paragraphe avec alignement ajustable
+% Cette definition requiert le chargement du package "array"
+%    - alignement horizontal, parametre #1 : - \raggedright (aligne a gauche)
+%                                            - \centering (centre)
+%                                            - \raggedleft (aligne a droite)
+%    - alignement vertical, parametre #2 : - p (aligne en haut)
+%                                          - m (centre)
+%                                          - b (aligne en bas)
+%    - largeur, parametre #3 : longueur
+\newcolumntype{Z}[3]{>{#1\hspace{0pt}\arraybackslash}#2{#3}}
+
+% Definitions des parametres de la page titre
+\TitreProjet{Fish \& Chips}                         % Titre du projet
+\TitreRapport{Rapport de projet -- version 0}                       % Titre du rapport
+\Destinataire{Robert Bergevin, Luc Lamontagne et Simon Thibault}         % Nom(s) du destinataire
+\NumeroEquipe{7}                                     % Numero de l'equipe
+\NomEquipe{Les Requins}                               % Nom de l'equipe
+\TableauMembres{%                                     % Tableau des membres de l'equipe
+   111\,111\,111  & Vincent Lambert    & \\\hline        % matricule & nom & \\\hline
+   222\,222\,222  & Rémi Lévesque & \\\hline        % matricule & nom & \\\hline
+   333\,333\,333  & Ibrahim Mahamadou & \\\hline        % matricule & nom & \\\hline
+   444\,444\,444  & Honoré Marcotte & \\\hline        % matricule & nom & \\\hline
+   111\,160\,242  & Jérémy Talbot-Pâquet& \\\hline        % matricule & nom & \\\hline
+}
+\DateRemise{31 janvier 2019}                           % Date de remis
+
+
+% Contenu de l'historique des versions
+\HistoriqueVersions{%                        % Version & Date & Description \\\hline
+         & 30 janvier 2019 & Création du document \\\hline
+   1.0   & 31 janvier 2019 & Mise en page, ajout de la table des matières, des chapitres d'introduction et de description du projet\\\hline
+   1.1   & 21 févier 2019 & Ajout du chapitre «Objectifs» et rédaction du cahier des charges\\\hline
+   1.2   & 21 mars 2019 & Ajout du chapitre «Conceptualisation et analyse de faisabilité»\\\hline
+   1.3   & 18 avril 2019 & Ajout des chapitres «Étude préliminaire» et «Concept retenu»\\\hline
+}
+
+
+% Corps du document
+
+\begin{document}
+
+%   Chapitres
+\input{tex/introduction}
+\input{tex/description}
+\input{tex/objectifs}
+\input{tex/cahier_des_charges}
+\input{tex/conceptualisation_et_analyse}
+\input{tex/etude_preliminaire}
+\input{tex/concept_retenu}
+\input{tex/bibliographie}
+
+%   Annexes
+\appendix
+\input{tex/annexe}
+
+\end{document}
+% Fin du document
+
