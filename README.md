@@ -23,44 +23,44 @@ ou
 
 
 1. Configurer le nom pour git
-
+```
 git config --global user.email sam@example.com
-
+```
 2. Créer un dépôt dans le répertoire
-
+```
 git init
-
+```
 3. Aller chercher les fichiers
-
+```
 git clone <url>
 
 exemple: git clone https://github.com/Remi-Levesque/Design1.git
-
+```
 
 # Ajouter un fichier au dépôt git
 
 -1. Regarder ce qui s'est fait dans le dépôt git
-
+```
 git status
-
+```
 0. Aller chercher les fichiers qui ont été modifiés pour pas overwrite ce qui a déjà été fait
-
+```
 git pull
-
+```
 1. Spécifier le(s) fichier(s) à ajouter
-
+```
 git add -A
-
+```
 2. Écrire le commentaire
-
+```
 git commit -a -m "Ajout de file_name.ext"
-
+```
 3. Envoyer les modifications au dépôt
-
+```
 git push
 ou
 git push origin master
-
+```
 Si "Another git process seems to be running in this repository":
 
 > Afficher les éléments masqués
@@ -71,15 +71,16 @@ SUPPRIMER UN FICHIER
 1. Supprimer le fichier dans l'Explorer Windows
 
 2. Faire les changements dans le répertoire
-
+```
 $ git commit -a -m "Suppression de <file>"
-
+```
 3. Envoyer les changements au dépôt git
-
+```
 $ git push
-
+```
 # UTILE
 
 Regarder les fichiers qui sont pas commun à ceux du dépôt
-
+```
 git status
+```
