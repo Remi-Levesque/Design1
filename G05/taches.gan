@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Design I - Les Requins" company="" webLink="http://" view-date="2019-01-21" view-index="0" gantt-divider-location="437" resource-divider-location="300" version="2.8.9" locale="fr">
+    <description/>
+    <view zooming-state="default:4" id="gantt-chart">
+        <field id="tpd3" name="Nom" width="105" order="0"/>
+        <field id="tpd4" name="Date de début" width="104" order="1"/>
+        <field id="tpd5" name="Date de fin" width="105" order="2"/>
+        <field id="tpd8" name="Responsable" width="104" order="3"/>
+        <option id="taskLabelUp" value="name"/>
+        <option id="taskLabelLeft" value="resources"/>
+        <timeline><![CDATA[173,153,156,73]]></timeline>
+        <option id="color.recent"><![CDATA[#000000 #ff0000 #ff0033]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nom" width="210" order="0"/>
+        <field id="1" name="Rôle par défaut" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="28" name="Projet Global" color="#000000" meeting="false" start="2019-01-15" duration="67" complete="15" thirdDate="2019-01-16" thirdDate-constraint="0" expand="true">
+            <task id="71" name="G02" color="#8cb6ce" meeting="false" start="2019-01-15" duration="7" complete="0" thirdDate="2019-01-16" thirdDate-constraint="0" expand="true">
+                <depend id="72" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="72" name="G03" color="#8cb6ce" meeting="false" project="true" start="2019-01-24" duration="5" complete="90" thirdDate="2018-12-17" thirdDate-constraint="0" expand="false">
+                <depend id="77" type="2" difference="0" hardness="Strong"/>
+                <task id="75" name="Diagramme de Gantt" color="#8cb6ce" meeting="false" start="2019-01-24" duration="5" complete="100" thirdDate="2018-12-17" thirdDate-constraint="0" expand="true"/>
+                <task id="73" name="OJ" color="#8cb6ce" meeting="false" start="2019-01-24" duration="5" complete="100" thirdDate="2018-12-17" thirdDate-constraint="0" expand="true"/>
+                <task id="74" name="PV" color="#8cb6ce" meeting="false" start="2019-01-24" duration="5" complete="100" thirdDate="2018-12-17" thirdDate-constraint="0" expand="true"/>
+                <task id="142" name="Créer un groupe Discord" color="#8cb6ce" meeting="false" start="2019-01-24" duration="5" complete="100" thirdDate="2019-01-14" thirdDate-constraint="0" expand="true"/>
+                <task id="147" name="Rapport de projet version 0" color="#8cb6ce" meeting="false" start="2019-01-24" duration="5" complete="90" thirdDate="2019-01-14" thirdDate-constraint="0" expand="true"/>
+                <task id="151" name="Recherche sur LiDAR" color="#8cb6ce" meeting="false" start="2019-01-24" duration="5" complete="50" thirdDate="2019-01-14" thirdDate-constraint="0" expand="true"/>
+            </task>
+            <task id="145" name="Recherche sur l'Intelligence artificielle" color="#8cb6ce" meeting="false" start="2019-01-24" duration="10" complete="70" thirdDate="2019-01-14" thirdDate-constraint="0" expand="true">
+                <depend id="173" type="1" difference="0" hardness="Strong"/>
+            </task>
+            <task id="77" name="G04" color="#8cb6ce" meeting="false" start="2019-01-31" duration="5" complete="79" thirdDate="2019-01-16" thirdDate-constraint="0" expand="false">
+                <depend id="78" type="2" difference="0" hardness="Strong"/>
+                <task id="156" name="PV" color="#8cb6ce" meeting="false" start="2019-01-31" duration="5" complete="100" thirdDate="2019-01-14" thirdDate-constraint="0" expand="true">
+                    <depend id="153" type="3" difference="0" hardness="Strong"/>
+                </task>
+                <task id="153" name="OJ" color="#8cb6ce" meeting="false" start="2019-02-04" duration="3" complete="100" thirdDate="2019-01-14" thirdDate-constraint="0" expand="true"/>
+                <task id="164" name="Diagramme de Gantt" color="#8cb6ce" meeting="false" start="2019-01-31" duration="5" complete="100" thirdDate="2019-01-21" thirdDate-constraint="0" expand="true"/>
+                <task id="169" name="Recherche sur les caméras" color="#8cb6ce" meeting="false" start="2019-01-31" duration="5" complete="70" thirdDate="2019-01-21" thirdDate-constraint="0" expand="true"/>
+                <task id="173" name="Recherche sur l'identification des poissons" color="#8cb6ce" meeting="false" start="2019-01-31" duration="5" complete="50" thirdDate="2019-01-31" thirdDate-constraint="0" expand="true"/>
+                <task id="161" name="Remise GestionG04" color="#8cb6ce" meeting="true" start="2019-02-06" duration="0" complete="0" thirdDate="2019-01-21" thirdDate-constraint="0" expand="true"/>
+            </task>
+            <task id="78" name="G05" color="#8cb6ce" meeting="false" start="2019-02-07" duration="5" complete="88" thirdDate="2019-01-16" thirdDate-constraint="0" expand="true">
+                <depend id="79" type="2" difference="0" hardness="Strong"/>
+                <task id="195" name="PV" color="#8cb6ce" meeting="false" start="2019-02-07" duration="5" complete="100" thirdDate="2019-01-21" thirdDate-constraint="0" expand="true">
+                    <depend id="197" type="3" difference="0" hardness="Strong"/>
+                </task>
+                <task id="197" name="OJ" color="#8cb6ce" meeting="false" start="2019-02-11" duration="3" complete="100" thirdDate="2019-02-07" thirdDate-constraint="0" expand="true"/>
+                <task id="201" name="Remise GestionG05" color="#8cb6ce" meeting="true" start="2019-02-13" duration="0" complete="0" thirdDate="2019-02-07" thirdDate-constraint="0" expand="true"/>
+            </task>
+            <task id="79" name="G06" color="#8cb6ce" meeting="false" start="2019-02-14" duration="5" complete="0" thirdDate="2019-01-16" thirdDate-constraint="0" expand="true">
+                <depend id="81" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="81" name="G07" color="#8cb6ce" meeting="false" start="2019-02-21" duration="5" complete="0" thirdDate="2019-01-16" thirdDate-constraint="0" expand="true">
+                <depend id="82" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="82" name="G09" color="#8cb6ce" meeting="false" start="2019-02-28" duration="10" complete="0" thirdDate="2019-01-16" thirdDate-constraint="0" expand="true">
+                <depend id="83" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="83" name="G10" color="#8cb6ce" meeting="false" start="2019-03-14" duration="5" complete="0" thirdDate="2019-01-16" thirdDate-constraint="0" expand="true">
+                <depend id="85" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="85" name="G11" color="#8cb6ce" meeting="false" start="2019-03-21" duration="5" complete="0" thirdDate="2019-01-16" thirdDate-constraint="0" expand="true">
+                <depend id="86" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="86" name="G12" color="#8cb6ce" meeting="false" start="2019-03-28" duration="5" complete="0" thirdDate="2019-01-16" thirdDate-constraint="0" expand="true"/>
+            <task id="114" name="Rapport" color="#8cb6ce" meeting="false" start="2019-01-25" duration="59" complete="0" thirdDate="2019-01-14" thirdDate-constraint="0" expand="true">
+                <task id="119" name="Introduction" color="#8cb6ce" meeting="false" start="2019-01-25" duration="4" complete="0" thirdDate="2019-01-14" thirdDate-constraint="0" expand="true">
+                    <depend id="131" type="2" difference="0" hardness="Strong"/>
+                    <depend id="134" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="125" name="Description" color="#8cb6ce" meeting="false" start="2019-01-25" duration="4" complete="0" thirdDate="2019-01-14" thirdDate-constraint="0" expand="true">
+                    <depend id="131" type="2" difference="0" hardness="Strong"/>
+                    <depend id="134" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="110" name="Remise rapport version V0" color="#8cb6ce" meeting="true" start="2019-01-31" duration="0" complete="0" thirdDate="2019-01-14" thirdDate-constraint="0" expand="true"/>
+                <task id="131" name="Besoins &amp; objectifs" color="#8cb6ce" meeting="false" start="2019-01-31" duration="15" complete="0" thirdDate="2019-01-14" thirdDate-constraint="0" expand="true">
+                    <depend id="135" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="134" name="Cahier des charges" meeting="false" start="2019-01-31" duration="15" complete="0" expand="true">
+                    <depend id="135" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="80" name="Remise rapport version V1" color="#8cb6ce" meeting="true" start="2019-02-21" duration="0" complete="0" thirdDate="2019-01-16" thirdDate-constraint="0" expand="true"/>
+                <task id="135" name="Conceptualisation et analyse de faisabilité" color="#8cb6ce" meeting="false" start="2019-02-21" duration="20" complete="0" thirdDate="2019-01-28" thirdDate-constraint="0" expand="true">
+                    <depend id="138" type="2" difference="0" hardness="Strong"/>
+                    <depend id="141" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="84" name="Remise rapport version V2" color="#8cb6ce" meeting="true" start="2019-03-21" duration="0" complete="0" thirdDate="2019-01-16" thirdDate-constraint="0" expand="true"/>
+                <task id="138" name="Étude préliminaire" color="#8cb6ce" meeting="false" start="2019-03-21" duration="20" complete="0" thirdDate="2019-01-14" thirdDate-constraint="0" expand="true"/>
+                <task id="141" name="Concept retenu" color="#8cb6ce" meeting="false" start="2019-03-21" duration="20" complete="0" thirdDate="2019-01-14" thirdDate-constraint="0" expand="true"/>
+                <task id="87" name="Remise rapport version finale" color="#8cb6ce" meeting="true" start="2019-04-18" duration="0" complete="0" thirdDate="2019-01-16" thirdDate-constraint="0" expand="true"/>
+            </task>
+        </task>
+    </tasks>
+    <resources>
+        <resource id="0" name="Rémi Lévesque" function="Default:1" contacts="remi.levesque.3@ulaval.ca" phone=""/>
+        <resource id="1" name="Vincent Lambert" function="Default:1" contacts="" phone="">
+            <rate name="standard" value="200000"/>
+        </resource>
+        <resource id="2" name="Jérémy Talbot-Pâquet" function="Default:1" contacts="" phone="">
+            <rate name="standard" value="-1"/>
+        </resource>
+        <resource id="3" name=" Ibrahim Bagadoma" function="Default:0" contacts="" phone="">
+            <rate name="standard" value="-10"/>
+        </resource>
+        <resource id="4" name="Honoré Marcotte" function="Default:0" contacts="" phone="">
+            <rate name="standard" value="2"/>
+        </resource>
+    </resources>
+    <allocations>
+        <allocation task-id="75" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="119" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="125" resource-id="0" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="147" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="145" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="173" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="197" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="119" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="125" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="142" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="147" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="145" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="161" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="173" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="74" resource-id="2" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="147" resource-id="2" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="151" resource-id="2" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="153" resource-id="2" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="169" resource-id="2" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="195" resource-id="2" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="201" resource-id="2" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="147" resource-id="3" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="151" resource-id="3" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="156" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="169" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="73" resource-id="4" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="147" resource-id="4" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="151" resource-id="4" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="164" resource-id="4" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="169" resource-id="4" function="Default:0" responsible="false" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
