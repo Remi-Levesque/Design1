@@ -1,10 +1,10 @@
 %!TEX encoding = IsoLatin
 
 %
-% Exemple de procès-verbal
+% Exemple d'ordre du jour
 % par Pierre Tremblay, Universite Laval
 % modifie par Christian Gagne, Universite Laval
-% % 2011/01/14 - version 1.4
+% 2011/01/14 - version 1.4
 % modifié par Robert Bergevin, Université Laval
 % 24/11/2011
 % modifié par Jean-Yves Chouinard, Université Laval
@@ -20,19 +20,18 @@
 
 % Chargement des packages supplementaires
 \usepackage[ansinew]{inputenc}
+\usepackage{url}
 \usepackage{pifont}
-
 
 % Definitions des parametres de l'en-tete
 \Cours{GEL--1001 Design I (méthodologie)}             % Nom du cours
-\NumeroEquipe{99}                                     % Numero de l'equipe
-\NomEquipe{Les gaulois}                               % Nom de l'equipe
-\Objet{Procès-verbal}                                 % Nom du document
-\SujetRencontre{Organisation et planification}             % Sujet de la rencontre
-\DateRencontre{2017/01/16}                            % Date de la rencontre
-\LocalRencontre{PLT--1122}                            % Local de la rencontre
-\HeureRencontre{13h30-15h00}                          % Heure de la rencontre
-
+\NumeroEquipe{7}                                     % Numero de l'equipe
+\NomEquipe{Les requins}                               % Nom de l'equipe
+\Objet{Procès-verbal \#4}                                 % Nom du document
+\SujetRencontre{Besoins, objectifs et logiciel de reconnaissance}        % Sujet de la rencontre
+\DateRencontre{2019/02/07}                            % Date de la rencontre
+\LocalRencontre{PLT--2708}                            % Local de la rencontre
+\HeureRencontre{8h30-10h20}                          % Heure de la rencontre
 
 %--------------------------------------------------------------------------------------
 %--------------------------------- corps du document ----------------------------------
@@ -41,148 +40,263 @@
 \entete
 \begin{enumerate}
 
-% nouveau point
-\item \textbf{Ouverture de la réunion}
-Heure: 13h30
+	\item \textbf{Ouverture de la réunion}
 
-% nouveau point
-\item \textbf{Nomination ou confirmation du président et du secrétaire}
+	\item \textbf{Nomination ou confirmation du président et du secrétaire}
 
-\begin{tabular}{@{}ll}
-   Président: Bonemine
-   & Secrétaire: Tragicomix
-\end{tabular}
+	Ibrahim et Jérémy sont respectivement nommés président et secrétaire de la réunion.
 
-% nouveau point
-\item \textbf{Adoption de l'ordre du jour}
+	\item \textbf{Lecture et adoption de l'ordre du jour de la rencontre du 5 février 2019}
 
-L'ordre du jour proposé est adopté à l'unanimité.
+	Le sujet de la rencontre a été modifié de «Besoins, objectifs et logiciel de reconnaissance».
 
-% nouveau point
-\item \textbf{Lecture et adoption du procès-verbal de la réunion du 12 janvier 2017}
+	Le point 5.2.1 traitera plutôt des spécifications générales de la caméra au lieu de la taille.
 
-Le procès-verbal proposé est adopté à l'unanimité.
+	Le point 5.3 a été transféré dans la section «Points à traiter» puisque personne n'avait encore fait de recherches à ce sujet.
 
-% nouveau point
-\item \textbf{Affaires découlant du procès-verbal}
+	Le point 6.1 «Idées sur la prise d'images» a été enlevé puisqu'il a été jugé plus pertinent de parler des besoins et objectifs plutôt que d'amener de nouvelles idées.
 
-\begin{enumerate}
+	L'ancien point 6.2 («Cahier des charges») a été remplacé par l'énumération des besoins et objectifs. Le point 6.1 est donc l'énumération des besoins et objectifs et le point 6.2 devient «Mesure de la température».
 
-\item Affaire \#1
+	%L'ordre du jour modifié est adopté à l'unanimité.
 
-\begin{enumerate}
+	\item \textbf{Lecture et adoption du procès-verbal de la réunion du 31 janvier 2019}
 
-\item Sous-affaire \#1
+	\item \textbf{Affaires découlant du procès-verbal}
 
-Quo usque tandem abutere, Catilina, patientia nostra? quam diu etiam furor iste tuus nos eludet? quem ad finem sese effrenata iactabit audacia? Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae, nihil timor populi, nihil concursus bonorum omnium, nihil hic munitissimus habendi senatus locus, nihil horum ora voltusque moverunt? Patere tua consilia non sentis, constrictam iam horum omnium scientia teneri coniurationem tuam non vides? Quid proxima, quid superiore nocte egeris, ubi fueris, quos convocaveris, quid consilii ceperis, quem nostrum ignorare arbitraris?
+	\begin{enumerate}
+		
+		\item Retour sur le logiciel de reconnaissance par intelligence artificielle
 
-O tempora, o mores! Senatus haec intellegit. consul videt; hic tamen vivit. Vivit? immo vero etiam in senatum venit, fit publici consilii particeps, notat et designat oculis ad caedem unum quemque nostrum. Nos autem fortes viri satis facere rei publicae videmur, si istius furorem ac tela vitemus. Ad mortem te, Catilina, duci iussu consulis iam pridem oportebat, in te conferri pestem, quam tu in nos [omnes iam diu] machinaris.
+			\begin{enumerate}
 
+				\item Possibilité de la réalisation
 
-\item Sous-affaire \#2
+				Vincent a trouvé un article d'un projet pertinent: il s'agit d'un projet de reconnaissance du traffic sur les routes. Des caméras qui prennent des photos de la circulation routière. Ensuite, il y a un réseau neuronal convolutif (CNN) qui reconnait si il y a du traffic dans la zone étudiée. Ce réseau s'appelle CNN et il inclut aussi un pré-entrainement avec une base de donnée. Cela permet d'entraîner le réseau de neurones par soi-même sans avoir à dicter manuellement ce qu'il y a dans l'image. Cela pourrait aussi éviter d'avoir à parler à un spécialiste ce qui sauverait de l'argent. Il serait intéressant de s'inspirer de ce projet puisque cela rejoint un de nos besoins, soit de reconnaitre des poissons à partir d'images.
 
-Quo usque tandem abutere, Catilina, patientia nostra? quam diu etiam furor iste tuus nos eludet? quem ad finem sese effrenata iactabit audacia? Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae, nihil timor populi, nihil concursus bonorum omnium, nihil hic munitissimus habendi senatus locus, nihil horum ora voltusque moverunt? Patere tua consilia non sentis, constrictam iam horum omnium scientia teneri coniurationem tuam non vides? Quid proxima, quid superiore nocte egeris, ubi fueris, quos convocaveris, quid consilii ceperis, quem nostrum ignorare arbitraris?
+Lien du projet: \url{https://aaltodoc.aalto.fi/bitstream/handle/123456789/27960/master_Stenroos_Olavi_2017.pdf?sequence=1&isAllowed=y}
+		
+				\item Coût du logiciel
+				
+				Le coût d'un tel logiciel reste encore flou. Vincent et Rémi n'ont pas trouvé d'indications claires. Le coût semble très spécifique dépendemment du projet et peuvent varier de 30 000\$ à 150 000\$. Jérémy propose de regarder sur le site de Coveo, une entreprise de Québec.
 
-O tempora, o mores! Senatus haec intellegit. consul videt; hic tamen vivit. Vivit? immo vero etiam in senatum venit, fit publici consilii particeps, notat et designat oculis ad caedem unum quemque nostrum. Nos autem fortes viri satis facere rei publicae videmur, si istius furorem ac tela vitemus. Ad mortem te, Catilina, duci iussu consulis iam pridem oportebat, in te conferri pestem, quam tu in nos [omnes iam diu] machinaris.
-
-\end{enumerate}
-
-\item Affaire \#2
-
-Quo usque tandem abutere, Catilina, patientia nostra? quam diu etiam furor iste tuus nos eludet? quem ad finem sese effrenata iactabit audacia? Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae, nihil timor populi, nihil concursus bonorum omnium, nihil hic munitissimus habendi senatus locus, nihil horum ora voltusque moverunt? Patere tua consilia non sentis, constrictam iam horum omnium scientia teneri coniurationem tuam non vides? Quid proxima, quid superiore nocte egeris, ubi fueris, quos convocaveris, quid consilii ceperis, quem nostrum ignorare arbitraris?
-
-O tempora, o mores! Senatus haec intellegit. consul videt; hic tamen vivit. Vivit? immo vero etiam in senatum venit, fit publici consilii particeps, notat et designat oculis ad caedem unum quemque nostrum. Nos autem fortes viri satis facere rei publicae videmur, si istius furorem ac tela vitemus. Ad mortem te, Catilina, duci iussu consulis iam pridem oportebat, in te conferri pestem, quam tu in nos [omnes iam diu] machinaris.
-
-\end{enumerate}
+Lien du projet: \url{https://www.coveo.com/fr/technologie/apprentissage-machine}
 
 
-% nouveau point
-\item \textbf{Points à traiter}
+			\end{enumerate}
 
-\begin{enumerate}
+		\item Retour sur les spécifications du capteur
 
-\item Point \#1
+			Caméra PC-900C de chasse
 
-\begin{enumerate}
+			\url{http://www.reconyx.com/product/pc900c-cellular-hyperfire-professional-covert-ir}
 
-\item Sous-point \#1
+			\begin{enumerate}
 
-Quo usque tandem abutere, Catilina, patientia nostra? quam diu etiam furor iste tuus nos eludet? quem ad finem sese effrenata iactabit audacia? Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae, nihil timor populi, nihil concursus bonorum omnium, nihil hic munitissimus habendi senatus locus, nihil horum ora voltusque moverunt? Patere tua consilia non sentis, constrictam iam horum omnium scientia teneri coniurationem tuam non vides? Quid proxima, quid superiore nocte egeris, ubi fueris, quos convocaveris, quid consilii ceperis, quem nostrum ignorare arbitraris?
+				\item Spécifications
 
-O tempora, o mores! Senatus haec intellegit. consul videt; hic tamen vivit. Vivit? immo vero etiam in senatum venit, fit publici consilii particeps, notat et designat oculis ad caedem unum quemque nostrum. Nos autem fortes viri satis facere rei publicae videmur, si istius furorem ac tela vitemus. Ad mortem te, Catilina, duci iussu consulis iam pridem oportebat, in te conferri pestem, quam tu in nos [omnes iam diu] machinaris.
+				\begin{enumerate}
+
+				\item Résolution
+
+					La caméra a une résolution de 3.1 Mega-pixels. Il n'est pas nécessaire d'avoir une résolution aussi grande puisque les images devront être transformé en un format 100x100 px.
+
+				\item Dimensions
+
+					Le système a des dimensions de 5.5"H x 4.5"W x 3"D (12.7cm x 10.2cm x 7.6cm). La caméra à elle seule a donc un volume de 98 cm$^3$, soit 0.000098$m^3$.
+					
+
+				\item 	Mémoire interne			
+					
+					La caméra peut enregistrer jusqu'à 32GB de données. Dans le cadre du projet, il s'agit d'un aspect pratique, mais la mémoire interne de la caméra peut être grandement réduite puisque les données seront transférées à un centre de contrôle externe afin de conserver la compacité du système de prise d'images. Réduire la taille du stockage du système de prise d'images réduira aussi le coût.
+
+				\item Méta-données
+
+					Ce système peut donner la température ambiente, la date, l'heure et la phase de la lune.
+
+				\item Sensibilté spectrale
+
+					La plage de sensibilité spectrale de la caméra n'est pas spécifiée
+
+				\item Autres spécifications
+				
+					Cette caméra est dotée d'une focale ajustable.
+
+				\end{enumerate}
+		
+				\item Coût
+	
+				Cette caméra coûte 1200\$. Le budget alloué au matériel doit être inférieur à 10 000\$.
+
+				\item Plage de sensibilité spectrale
+
+				Il serait pratique d'avoir une caméra qui est sensible dans le visible et l'infrarouge pour pouvoir prendre des photos le jour et la nuit.
+				
+				\item Conclusion
+				
+				Cette caméra ne semble pas être adaptée pour le cadre du projet.
+				
+			\end{enumerate}
+		
+		\item Présentation des objectifs et besoins du projet
+
+		Personne n'avait encore fait de recherche sur ce point et il a été discuté dans la section «Points à traiter» lors de la rencontre
+		
+	\end{enumerate}
+
+	\item \textbf{Points à traiter}
+	
+	\begin{enumerate}
+
+		\item Énumération des besoins et objectifs
+		
+		L'équipe au complet propose des suggestions de besoins et objectifs pour la rédaction du chapitre 3.
+		
+		\begin{enumerate}
+	
+		\item Besoins
+
+		\begin{enumerate}
+
+		\item Le système doit avoir une autonomie d'au moins 2 semaines.
+	
+		On pourrait utiliser une diode électroluminescente pour convertir la lumière en courant et charger une batterie pour augmenter la durée de vie.
+
+		\item Le système doit pouvoir être utilisable en tout temps
+
+		\item Le système doit prendre des photos automatiquement sur un volume d'au moins 1m$^3$
+
+		\item Les poissons représentés sur l'image doivent être clairement visibles peu importe les conditions
+
+		\item Le système doit distinguer 5 sortes de poissons différents
+
+		Une solution serait de concevoir un logiciel de reconnaissance par intelligence artificielle. Nous avons exploré les réseaux neuronaux et les réseaux neuronaux convolutifs.
+
+		\item Le système doit pouvoir enregistrer les données pendant au moins 2 ans
 
 
-\item Sous-point \#2
+		\item Le système se doit de pouvoir communiquer à une distance
 
-Quo usque tandem abutere, Catilina, patientia nostra? quam diu etiam furor iste tuus nos eludet? quem ad finem sese effrenata iactabit audacia? Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae, nihil timor populi, nihil concursus bonorum omnium, nihil hic munitissimus habendi senatus locus, nihil horum ora voltusque moverunt? Patere tua consilia non sentis, constrictam iam horum omnium scientia teneri coniurationem tuam non vides? Quid proxima, quid superiore nocte egeris, ubi fueris, quos convocaveris, quid consilii ceperis, quem nostrum ignorare arbitraris?
+		La caméra doit communiquer avec le centre de contrôle situé à une distance d'environ 50m.
 
-O tempora, o mores! Senatus haec intellegit. consul videt; hic tamen vivit. Vivit? immo vero etiam in senatum venit, fit publici consilii particeps, notat et designat oculis ad caedem unum quemque nostrum. Nos autem fortes viri satis facere rei publicae videmur, si istius furorem ac tela vitemus. Ad mortem te, Catilina, duci iussu consulis iam pridem oportebat, in te conferri pestem, quam tu in nos [omnes iam diu] machinaris.
+		Le centre de contrôle doit communiquer partout dans le monde via une connexion sécurisée.
 
-\end{enumerate}
+		\item Le système doit avoir une connexion sécurisée
 
-\item Point \#2
+		\item Le système doit être submersible jusqu'à 50 pieds
 
-Quo usque tandem abutere, Catilina, patientia nostra? quam diu etiam furor iste tuus nos eludet? quem ad finem sese effrenata iactabit audacia? Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae, nihil timor populi, nihil concursus bonorum omnium, nihil hic munitissimus habendi senatus locus, nihil horum ora voltusque moverunt? Patere tua consilia non sentis, constrictam iam horum omnium scientia teneri coniurationem tuam non vides? Quid proxima, quid superiore nocte egeris, ubi fueris, quos convocaveris, quid consilii ceperis, quem nostrum ignorare arbitraris?
+		\item Le système se doit d'opérer pour des températures de -6 à 30°C
 
-O tempora, o mores! Senatus haec intellegit. consul videt; hic tamen vivit. Vivit? immo vero etiam in senatum venit, fit publici consilii particeps, notat et designat oculis ad caedem unum quemque nostrum. Nos autem fortes viri satis facere rei publicae videmur, si istius furorem ac tela vitemus. Ad mortem te, Catilina, duci iussu consulis iam pridem oportebat, in te conferri pestem, quam tu in nos [omnes iam diu] machinaris.
+		\item Le système doit enregistrer des méta-données
+		Température extérieure, température interne, date et heure
 
-\end{enumerate}
+		\item Le système de prise d'images doit avoir un volume inférieur à 0.3 m$^3$
+
+		\item Le système de prise d'images doit avoir une masse inférieure à 5kg
+
+		\end{enumerate}
+
+		\item Objectifs
+
+		\begin{enumerate}
+		\item Minimiser l'interaction humaine
+
+		On voudrait que le système soit le plus autonome possible. De la maintenance du capteur jusqu'au transfert de données en passant par l'indentification des poissons, l'automatisation du système sera maximisée.
+
+		\item Maximiser la précision de l'identification
+
+		La qualité de l'image importe peu si le système est capable d'identifier les poissons avec une grande précision. On voudrait une précision d'identification supérieure à 95\% pour minimiser l'intervention humaine.
+
+		\item Maximiser la durée de vie totale du système
+
+		On voudrait offrir un produit qui serait le plus durable possible, autant au plan physique que logiciel. L'équipement doit être durable et la conception logiciel doit être moderne et au goût de l'industrie actuelle.
+
+		\item Maximiser l'autonomie du système
+
+		Il est spécifié que le système doit être autonome pour une durée de 2 semaines sans interaction humaine. On voudrait toutefois donner une marge d'autonomie supplémentaire.
+
+		\item Maximiser le stockage de données
+
+		Bien qu'il soit spécifié que les données doivent être stockées durant au moins 2 ans, si le budget alloué pour le matériel n'est pas dépassé, on voudrait mettre de l'argent sur un espace de stockage plus grand.
+
+		\item Maximiser la facilité de conception
+
+		On parle ici de trouver des équipements qui minimiseront le temps de conception et la complexité de l'usinage. 
+		\end{enumerate}
+
+	\end{enumerate}
 
 
-% nouveau point
-\item \textbf{Divers}
+		\item Mesure de la température
+		
+		Honoré propose l'utilisation de thermistances pour la température de l'eau et pour la température interne du système de prise d'images. Ces composantes électroniques sont peu coûteuses (2\$ chaque) et offrent une précision adéquate.
 
-Aucun élément à discuter.
+	\end{enumerate}
 
+	\item \textbf{Divers}
+	
+	\begin{enumerate}
+	
+	\item Go-Pro
 
-% nouveau point
-\item \textbf{Répartition des tâches}
+	Étant donné son aspect pratique, Rémi propose une nouvelle alternative pour la prise d'images: la caméra Go-Pro. Elle est submersible jusqu'à 33 pieds, coûte environ 600\$ et peut envoyer des données par son propre signal Wi-Fi. La connection n'est pas très sécurisée par contre. Il faudrait inverstir dans une connexion sécurisée.
 
-\begin{enumerate}
+	\item Kinect
 
-\item Assignation \#1: Iélosubmarine et Ordralphabétix doivent dresser une liste des espèces marines comestibles d'ici mardi.
+	Le système de Kinect intègre la distance à sa prise d'images ce qui assurerait une bonne mesure de la taille réelle des poissons. Cela vient rejoindre l'idée de la caméra avec un LiDAR intégré dont il a été question la semaine du 31 janvier 2019.
 
-\item Assignation \#2: Bonemine et Abraracourcix doivent étudier le cours de la sesterce durant les XII derniers mois d'ici mercredi.
+	\item FishVerifyApp
 
-\item Assignation \#3: Falbala et Tragicomix doivent graver la structure du dépôt \bsc{Mercurial} sur des \emph{tabul\ae{}} d'ici vendredi.
+	Vincent a trouvé une application sur mobile qui permet d'identifier des poissons avec une photo. On pourrait intégrer cela pour entrainer le réseau de neurone. Le système s'avère toutefois peu précis et nécessite des poissons facilement reconnaissable, mais il confirme la possibilité de reconnaitre des poissons par intelligence artificielle. 
 
-\end{enumerate}
+	\end{enumerate}
 
+	\item \textbf{Répartition des tâches}
 
-% nouveau point
-\item \textbf{Évaluation de la réunion}
+	Assignation \#1: Vincent est chargé de faire le procès-verbal \#5 de la réunion du 7 février 2019. Il se doit de le soumettre à l'équipe pour mardi le 12 février 2019 avant 19h.
 
-Points individuels ou collectifs à améliorer pour accroître le rendement des réunions d'équipe.
+	Assignation \#2: Rémi est chargé de faire l'ordre du jour \#5 de la réunion du 14 février 2019. Il se doit de le soumettre à l'équipe pour mardi le 12 février 2019 avant 19h.
 
+	Assignation \#3: Vincent est chargé de faire le diagramme de Gantt \#5 de la réunion du 14 février 2019. Il se doit de le soumettre à l'équipe pour mardi le 12 février 2019 avant 19h.
 
-% nouveau point
-\item \textbf{Date, heure, lieu et objectif de la prochaine réunion}
+	Assignation \#4: Vincent, Rémi et Honoré sont chargés de commencer la section sur les objectifs dans le chapitre 3 pour la rencontre du 14 février 2019. Vincent est nommé responsable.
+
+	Assignation \#5: Jérémy et Ibrahim sont chargés de commencer la section sur les besoins dans le chapitre 3 pour la rencontre du février 2019. Jérémy est nommé responsable.
+
+	Assignation \#6: Jérémy est nommé responsable de la remise G05 pour le 13 février 2019 à 15h.
+
+	\item \textbf{Évaluation de la réunion}
+
+	Malgré plusieurs modifications à l'ordre du jour, la réunion s'est bien déroulée. La liste des besoins et objectifs sera utile pour débuter la rédaction du chapitre 3 du rapport.
+
+\clearpage
+
+	\item \textbf{Date, heure, lieu et objectif de la prochaine réunion}
 
 \begin{tabular}{@{}lll}
-   Date: 2017/01/19
+   Date: 2019/02/07
    & Heure: 08h30
    &  Lieu: PLT--2708
 \end{tabular}
+
 \par
-Description de l'objectif ou des objectifs.
+La prochaine réunion portera sur la finalisation des besoins et objectifs ainsi que sur la préparation du cahier des charges. Il est plus important de définir ces paramètres avant de trouver d'autres idées pour la conception concrète du projet.
 
+	\item \textbf{Fermeture de la réunion}
 
-% nouveau point
-\item \textbf{Fermeture de la réunion}
-
-Heure: 15h05
+	Heure: 10h25
 
 
 % nouveau point
 \item \textbf{Étaient présents}
 
+
 \begin{dinglist}{"33}
-   \item Abraracourcix
-   \item Bonemine
-   \item Falbala
-   \item Iélosubmarine
-   \item Ordralphabétix
-   \item Tragicomix
+   \item Jérémy
+   \item Vincent
+   \item Ibrahim
+   \item Honoré
+   \item Rémi
 \end{dinglist}
 
 \end{enumerate}
