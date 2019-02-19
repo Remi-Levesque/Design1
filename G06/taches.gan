@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Design I - Les Requins" company="" webLink="http://" view-date="2019-02-03" view-index="0" gantt-divider-location="458" resource-divider-location="300" version="2.8.10" locale="fr_CA">
+<?xml version="1.0" encoding="UTF-8"?><project name="Design I - Les Requins" company="" webLink="http://" view-date="2019-02-03" view-index="0" gantt-divider-location="458" resource-divider-location="300" version="2.8.10" locale="fr">
     <description/>
     <view zooming-state="default:3" id="gantt-chart">
         <field id="tpd3" name="Nom" width="217" order="0"/>
         <field id="tpd4" name="Date de début" width="84" order="1"/>
         <field id="tpd5" name="Date de fin" width="78" order="2"/>
         <field id="tpd8" name="Responsable" width="60" order="3"/>
-        <timeline><![CDATA[156,73,153,173]]></timeline>
+        <timeline><![CDATA[153,156,173,73]]></timeline>
         <option id="color.recent"><![CDATA[#000000 #ff0000 #ff0033]]></option>
     </view>
     <view id="resource-table">
@@ -36,7 +36,7 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="28" name="Projet Global" color="#000000" meeting="false" start="2019-01-17" duration="91" complete="19" thirdDate="2019-01-16" thirdDate-constraint="0" expand="true">
+        <task id="28" name="Projet Global" color="#000000" meeting="false" start="2019-01-17" duration="91" complete="21" thirdDate="2019-01-16" thirdDate-constraint="0" expand="true">
             <task id="71" name="G02" color="#8cb6ce" meeting="false" start="2019-01-17" duration="6" complete="85" thirdDate="2019-01-16" thirdDate-constraint="0" expand="false">
                 <depend id="72" type="2" difference="0" hardness="Strong"/>
                 <task id="254" name="OJ" color="#8cb6ce" meeting="false" start="2019-01-17" duration="6" complete="100" thirdDate="2019-01-14" thirdDate-constraint="0" expand="true"/>
@@ -85,21 +85,21 @@
                 </task>
                 <task id="201" name="Remise GestionG05" color="#8cb6ce" meeting="true" start="2019-02-13" duration="0" complete="0" thirdDate="2019-02-07" thirdDate-constraint="0" expand="true"/>
             </task>
-            <task id="79" name="G06" color="#8cb6ce" meeting="false" start="2019-02-14" duration="7" complete="17" thirdDate="2019-01-16" thirdDate-constraint="0" expand="true">
-                <task id="377" name="PV" color="#8cb6ce" meeting="false" start="2019-02-14" duration="3" complete="90" thirdDate="2019-02-03" thirdDate-constraint="0" expand="true" cost-manual-value="100.0" cost-calculated="false">
+            <task id="79" name="G06" color="#8cb6ce" meeting="false" start="2019-02-14" duration="7" complete="75" thirdDate="2019-01-16" thirdDate-constraint="0" expand="true">
+                <task id="377" name="PV" color="#8cb6ce" meeting="false" start="2019-02-14" duration="3" complete="100" thirdDate="2019-02-03" thirdDate-constraint="0" expand="true" cost-manual-value="100.0" cost-calculated="false">
                     <depend id="402" type="2" difference="0" hardness="Strong"/>
                     <depend id="409" type="2" difference="0" hardness="Strong"/>
                     <depend id="416" type="2" difference="0" hardness="Strong"/>
                 </task>
-                <task id="402" name="OJ" color="#8cb6ce" meeting="false" start="2019-02-17" duration="3" complete="0" thirdDate="2019-02-03" thirdDate-constraint="0" expand="true" cost-manual-value="100.0" cost-calculated="false">
+                <task id="402" name="OJ" color="#8cb6ce" meeting="false" start="2019-02-17" duration="3" complete="100" thirdDate="2019-02-03" thirdDate-constraint="0" expand="true" cost-manual-value="100.0" cost-calculated="false">
                     <depend id="416" type="2" difference="0" hardness="Strong"/>
                 </task>
-                <task id="409" name="Diagramme de Gantt" color="#8cb6ce" meeting="false" start="2019-02-17" duration="3" complete="50" thirdDate="2019-02-03" thirdDate-constraint="0" expand="true" cost-manual-value="100.0" cost-calculated="false">
+                <task id="409" name="Diagramme de Gantt" color="#8cb6ce" meeting="false" start="2019-02-17" duration="3" complete="100" thirdDate="2019-02-03" thirdDate-constraint="0" expand="true" cost-manual-value="100.0" cost-calculated="false">
                     <depend id="416" type="2" difference="0" hardness="Strong"/>
                 </task>
                 <task id="416" name="Remise GestionG06" color="#8cb6ce" meeting="true" start="2019-02-20" duration="0" complete="0" thirdDate="2019-02-11" thirdDate-constraint="0" expand="true"/>
-                <task id="415" name="Révision des besoins et objectifs" color="#8cb6ce" meeting="false" start="2019-02-14" duration="7" complete="0" thirdDate="2019-02-03" thirdDate-constraint="0" expand="true" cost-manual-value="100.0" cost-calculated="false"/>
-                <task id="413" name="Rédaction du cahier des charges" color="#8cb6ce" meeting="false" start="2019-02-14" duration="7" complete="0" thirdDate="2019-02-03" thirdDate-constraint="0" expand="true" cost-manual-value="100.0" cost-calculated="false"/>
+                <task id="415" name="Révision des besoins et objectifs" color="#8cb6ce" meeting="false" start="2019-02-14" duration="7" complete="100" thirdDate="2019-02-03" thirdDate-constraint="0" expand="true" cost-manual-value="100.0" cost-calculated="false"/>
+                <task id="413" name="Rédaction du cahier des charges" color="#8cb6ce" meeting="false" start="2019-02-14" duration="7" complete="30" thirdDate="2019-02-03" thirdDate-constraint="0" expand="true" cost-manual-value="100.0" cost-calculated="false"/>
             </task>
             <task id="81" name="G07" color="#8cb6ce" meeting="false" start="2019-02-21" duration="6" complete="0" thirdDate="2019-01-16" thirdDate-constraint="0" expand="true"/>
             <task id="339" name="Remise GestionG07" color="#8cb6ce" meeting="true" start="2019-02-27" duration="0" complete="0" thirdDate="2019-02-04" thirdDate-constraint="0" expand="true"/>
