@@ -7,3 +7,224 @@
 \chapter{Cahier des charges}
 \label{s:cahier_des_charges}
 
+\section{Tableau des critères}
+
+\begin{table}[htp]
+   \footnotesize
+   \centering
+   \caption{Table des critères}
+   \label{t:criteres}
+   \begin{tabular}{|c|c|c|c|c|}
+        \hline
+        Critères & Pondération & Barème & Min. & Max.\\
+        \hline
+        \hline
+        Intervention humaine & 20\% & & & \\
+        \hline
+        Durée de vie de la batterie & 4\% & Table \ref{t:duree_de_vie} & &\\
+        Complexité de la maintenance & 4\% &  & & \\
+        Automatisation du transfert de données & 6\% &  & &\\
+        Accès à distance & 6\% &  & &\\
+        \hline\hline
+        Qualité du produit & 40\% & & &\\
+        \hline
+        Durée de vie de l'appareil & 4\% &  & & \\
+        Précision du logiciel de reconnaissance & 10\% &  & & \\
+        Utilisation de l'interface graphique & 2\% &  & & \\
+        Identification des poissons & 10\% &  & & \\
+        Capacité de stockage des données & 7\% &  & & \\
+        Fiabilité du système de sécurité & 7\% & & & \\
+        \hline\hline
+        Coûts & 15\% & & &\\
+        \hline
+        Coûts de conception du produit & 5\% &  & & \\
+        Frais d'installation & 3\% &  & & \\
+        Frais de maintenance et d'opération & 5\% &  & & \\
+        Coûts de remplacement des pièces & 2\% &  & & \\
+        \hline\hline
+        Facilité de conception & 10\% & & &\\
+        \hline
+        Temps de conception du produit & 3\% & Éq. \ref{eq:bareme_temps_conception} & $< 1$ jour & $>30$ jours\\
+        Rechange des pièces & 3\% & Table \ref{t:bareme_difficulte_rechange} & & \\
+        Complexité de l'usinage des pièces & 2\% & Table \ref{t:bareme_complexite_usinage} & & \\
+        Implantation du capteur  & 2\% & Table\ref{t:bareme_implantation_capteur} & & \\
+        \hline\hline
+        Respect des contraintes & 15\% & & & \\
+        \hline
+        Prise de mesure passive & 7\% & & & \\
+        Contraintes mécaniques & 5\% & & & \\
+        Contraintes des images & 3\% & & & \\
+        \hline
+        
+   \end{tabular}
+\end{table}
+
+\newpage{}
+
+\section{Intervention humaine}
+
+\subsection{Durée de vie de la batterie}
+
+Dans l'objectif d'atteindre une autonomie minimale de deux semaines, il est nécessaire d'optimiser le système d'alimentation du capteur. De plus, afin de ne pas limiter la disponibilité du capteur, il est idéal d'utiliser une batterie à cette effet. La durée de vie de deux semaines est requise par le client, sans quoi la solution est systématiquement rejetée. Une pondération de 4\% est attribué à ce critère. L'évaluation de l'autonomie de la batterie est évaluée de la manière suivante:
+
+\begin{table}[htp]
+   \footnotesize
+   \centering
+   \begin{tabular}{|c|c|}
+        \hline
+        Critères & Pondération\\
+        \hline
+        \hline
+        La batterie possède une autonomie d'au moins 14 jours & 1.0 \\
+        \hline
+        La batterie possède une autonomie comprise entre 11 et 14 jours & 0.8 \\
+        \hline
+        La batterie possède une autonomie comprise entre 7 et 11 jours & 0.6 \\
+        \hline
+        La batterie possède une autonomie de moins de 7 jours & 0.0 \\
+        \hline
+        
+   \end{tabular}
+   \caption{Évaluation de la durée de vie de la batterie}
+   \label{t:duree_de_vie}
+\end{table}
+
+\section{Assurer la qualité de conception}
+
+\subsection{Durée de vie de l'appareil}
+
+La qualité supérieure du produit est un aspect déterminant du calcul de performance du design: c'est pourquoi la longévité de l'appareil entre nécessairement en ligne de compte. La résistance de l'ensemble des composantes de la caméra se devra d'être une caractéristique maximisée dans l'application imposée par le ministère. La résistance à la corrosion des matériaux, la contrainte de tension élastique, la tenue de vie en fatigue et la durée de vie générale des composantes électroniques incluses dans le design sont à considérer. Puisque la qualité du produit rejoint la section portant sur son autonomie, on devra porter une attention particulière à la tenue du produit à long terme: la grande durée de vie de l'appareil assure une intervention humaine minimisée. C'est pourquoi on accorde une fonction de type linéaire au barème de durée de vie de l'appareil pour assurer une valeur ajoutée constante en fonction du temps. La formule va donc comme suit: insérer la formule ici... ajouter la pondération de cette section.
+                    
+
+\subsection{Précision du logiciel de reconnaissance}
+
+Le logiciel de reconnaissance du poisson étant au coeur du projet de conception, on donnera une certaine importance à la précision et l'exactitude du programme pour assurer une collecte de données efficace. De plus, un logiciel incapable de faire une bonne différenciation des espèces de poissons ruine l'ensemble des investissements ultérieurs: une excellente caméra ne vaut rien sans un logiciel de qualité. Par contre, à une différenciation d'exactitude dans les très hauts pourcentages (~85 à 100), on donnera graduellement moins d'importance aux variations d'efficacité. À un tel niveau d'exactitude, on laissera plus d'importance aux autres caractéristiques en considérant la précision de l'appareil déjà pratiquement maximisée. La fonction quantifiant la qualité de la reconnaissance du poisson s'apparente à une fonction de type logarithmique tel que présenté ci-contre: insérer la formule ici... ajouter la pondération de cette section.
+
+\subsection{Utilisation de l'interface graphique}
+
+Puisque l'optique principale de ce projet tourne autour une automatisation des tâches, l'aisance d'utilisation de l'interface lors de l'accès aux données et des opérations de maintenance bimensuelles rejoint tout autant la ligne directrice du design d'appareil. La différenciation entre un interface graphique excellent et médiocre étant difficile à quantifier par calcul, on donnera un barème sous forme de charte, où la valeur la plus grande sera accordée à une qualification de "très intuitive" et la plus faible à "très difficile d'utilisation". La charte des barèmes va donc comme suit: insérer la formule ici... ajouter la pondération de cette section.
+
+
+\subsection{Identification des poissons}
+La quantité de poissons reste également à considérer dans l'implantation du système dans la mesure où deux sites différents peuvent chacun comporter une faune aquatique distinctive. Une optimisation de la taille de la librairie des poissons est d'une grande importance lors de la collecte des données par l'appareil: ce dernier doit évidemment être en mesure d'effectuer une bonne reconnaissance du type de poisson. Par contre, on veut éviter les deux extremums dans cette section. Une trop grande variété de poisson n'est pas nécessairement désirable, car une différenciation de deux poissons relativement similaires pourrait éventuellement causer des problèmes dans le traitement de données par le logiciel. Une variété de poisson trop stricte causerait une collecte de données erronée dans certain milieux. Il est aussi à noter que le nombre de poissons à considérer est de cinq par site. On définira une fonction de type normale pour la gradation de ce barème: la clé du succès de ce critère repose dans la considération d'une taille de librairie appropriée, ni plus ni moins: insérer la formule ici.
+
+
+\subsection{Capacité de stockage des données}
+La collecte de données est un aspect primordial dans l'énonciation des critères imposés par le ministère: il est impératif que la taille de stockage puisse accepter des données allant jusqu'à une période de deux ans, et ce, à des fins de vérification. Il est à souligner ici qu'il n'y a aucun avantage à stocker les données pendant une période plus importante que celle imposée par le ministère: c'est pourquoi un barème de type binaire est le plus approprié ici. On affectera la valeur 1 au critère si le système de stockage de données répond bien au besoins du client, et 0 si le critère n'est pas satisfait. Insérer table binaire ici....
+
+\subsection{Fiabilité du système de sécurité}
+La confidentialité et l'authenticité des données est primordiale dans un tel projet: c'est pourquoi une grande partie de la cote associée à la qualité du design dépendra de la sécurité du produit. Plusieurs protocoles de conservation et de transfert des données devront être mis en place, et ce seront justement ici le nombre et la qualité des couches de sécurité offertes par le produit qui permettront une véritable quantification de ce critère. Puisque le système à livrer est fortement axé sur l'autonomie et l'accès à distance, un système qui est facilement compromis est à proscrire à tout prix. Une fonction exponentielle représente parfaitement l'enjeu ici: la moindre faiblesse du système de sécurité peut rendre le produit complètement inutilisable. Insérer la fonction ici....
+
+\section{Coûts}
+
+\subsection{Coûts de conception du produit}
+
+\subsection{Frais d'installation}
+
+\subsection{Frais de maintenance et d'opération}
+
+\subsection{Coûts de remplacement des pièces}
+
+
+\section{Facilité de conception}
+
+\subsection{Temps de conception du produit}
+
+Le temps de conception du produit doit être minimisé pour des raisons pratiques et financières: si le produit prend peu de temps à concevoir, il pourra être déployé plus rapidement et les coûts de conception en temps de personnel seront diminués.
+
+\begin{figure}[htb] % comment rajouter des pages izi
+    \centering
+    \includegraphics[width=0.5\linewidth]{fig/Temps_de_conception.png}
+    \caption{Illustration du barème du temps de conception}
+    \label{fig:temps_de_conception_bareme}
+\end{figure}
+
+\begin{equation}
+    y=e^{-0.14x}
+\label{eq:bareme_temps_conception}    
+\end{equation}
+
+\subsection{Rechange des pièces}
+
+\begin{table}[htp]
+   \footnotesize
+   \centering
+   \begin{tabular}{|c|c|}
+        \hline
+        Difficulté de la rechange des pièces & Barème\\
+        \hline
+        \hline
+        Très facile & 1.00 \\
+        \hline
+        Facile & 0.75 \\
+        \hline
+        Difficile & 0.50 \\
+        \hline
+        Très difficile & 0.25 \\
+        \hline
+        Impossible & 0.00 \\
+        \hline
+   \end{tabular}
+   \caption{Évaluation du barème de la difficulté de la rechange des pièces}
+   \label{t:bareme_difficulte_rechange}
+\end{table}
+
+\subsection{Complexité de l'usinage des pièces}
+
+\begin{table}[htp]
+   \footnotesize
+   \centering
+   \begin{tabular}{|c|c|}
+        \hline
+        Complexité de l'usinage des pièces & Barème\\
+        \hline
+        \hline
+        Très peu complexe & 1.00 \\
+        \hline
+        Peu complexe & 0.75 \\
+        \hline
+        Neutre & 0.50 \\
+        \hline
+        Complexe & 0.25 \\
+        \hline
+        Très complexe & 0.00 \\
+        \hline
+   \end{tabular}
+   \caption{Évaluation du barème de la complexité de l'usinage des pièces}
+   \label{t:bareme_complexite_usinage}
+\end{table}
+
+\subsection{Implantation du capteur}
+
+\begin{table}[htp]
+   \footnotesize
+   \centering
+   \begin{tabular}{|c|c|}
+        \hline
+        Facilité de l'implantation du capteur & Barème\\
+        \hline
+        \hline
+        Très peu complexe & 1.00 \\
+        \hline
+        Peu complexe & 0.75 \\
+        \hline
+        Neutre & 0.50 \\
+        \hline
+        Complexe & 0.25 \\
+        \hline
+        Très complexe & 0.00 \\
+        \hline
+   \end{tabular}
+   \caption{Évaluation du barème de la facilité de l'implantation du capteur}
+   \label{t:bareme_implantation_capteur}
+\end{table}
+
+\section{Respect des contraintes}
+
+\subsection{Prise de mesure passive}
+
+\subsection{Contraintes mécaniques}
+
+\subsection{Contraintes des images}
+
+
