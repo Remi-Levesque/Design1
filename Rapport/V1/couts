@@ -1,0 +1,57 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section{Minimiser les co\^uts}
+Une limite des coûts a été établie :
+On ne peut dépasser 10 000 dollars de frais matériel et 40 000 dollars de coûts humains. Ainsi, ces deux éléments sont à traiter indépendamment l’un de l’autre mais on peut considérer l’importance d’un coût global de 50 000 dollars. De ce fait, on considère une proportion égale de ces deux sources de dépense lors de l’évaluation globale des coûts afin de simplifier l’analyse et la compréhension des coûts liés à la fabrication et à l’entretien de la machine. Cependant, un budget attitré sera alloué à chacune de ses sections pour chaque source de dépense spécifique, et seront considérés séparément au moment de l’analyse des coûts du produit.
+
+    \begin{enumerate}
+    \item Minimiser les coûts de conception du produit :
+    
+    
+La première étape précédant l’utilisation de la machine, est sa conception. Cette partie est non négligeable dans le processus d’analyse des coûts de la machine car elle représente la plus grande source de dépense matérielle car on assemble toutes les pièces pour la construction. Afin de contenter au mieux notre client, on cherche à minimiser les coûts totaux liés à la fabrication de la machine. Cependant, il faut considérer le fait que si on cherche uniquement à fabriquer des machines en ne considérant que le prix minimal à partir duquel elles peuvent sortir de l’usine, on prend alors un risque énorme. En effet, si on prend un budget minimal pour fabriquer ces machines, cela signifie que les éléments qui seront choisi lors de la fabrication seront ceux qui coutent le moins donc qui ne sont pas nécessairement les plus performants de leur catégorie. Cette machine doit de plus être le plus autonome possible donc doit nécessiter le moins de réparation. On a donc un certain avantage à dépenser un peu plus que le minimum, pour obtenir une machine qui dure plus longtemps sans intervention. En parallèle, il faut limiter les coûts pour que le ministère puisse économiser et favorisera ainsi le projet.
+Ainsi, la courbe de l’efficacité en fonction du coût de production suit une forme suivante :
+(-$(S-1000)^2$+1000000)/1000000.
+
+
+Ici S représente le montant en dollars canadiens investis à partir du budget matériel en S varie entre 0 et 10 000. E représente l’efficacité noté sur 10. Le budget matériel est au maximum de 10 000 dollars. On cherche ainsi à empêcher de dépenser la moitié du budget matériel. On ne doit pas dépasser la moitié du budget alloué au matériel. En effet, en cas de sabotage complet de la machine, il est important que le client puisse s’en procurer un tout en restant dans son budget.
+
+ \item Minimiser les frais d’installation:
+ 
+ Ici, il est certain que chercher à dépenser pour l’installation est futiles. En effet, on ne cherche qu’à placer la machine là où les mesures seront faîtes. Ainsi, si on ne dépense que le strict minimum sur l’installation, on pourra avoir un budget optimal tout en ne se limitant pas dans une autre sphère du projet. 
+Ainsi on peut représenter cette composante des frais sous la forme :
+E(S) = 10/(S-50) à partir de S = 50
+On a un prix plancher de 50 car il sera nécessaire de se déplacer et de payer quelqu’un pour placer la machine (un coût total estimé à 50 dollars).
+
+\item Minimiser les frais de maintenance et opérations :
+
+En ce qui concerne les frais de maintenance et d’opérations, on se retrouve face à un dilemme similaire à celui du coût de constructions. En effet, si on investi trop peu d’argent, la machine se brisera plus rapidement et il faudra débourser encore plus dans le machine. Cependant, on cherche à limiter l’argent mis dans le projet pour ne pas trop alléger le portefeuille du ministère.
+Ainsi, on retrouve une fonction telle que :
+(-$(S-20000)^2$+100000000)/1000000
+Ici, tel que précédemment, on doit dépenser un certain montant pour s’assurer du fonctionnement du procédé de collecte de données et de l’entretien, si on en a le besoin. De ce fait, on cherche à ne pas dépasser 2000 dollars d’investissement mais viser à dépenser moins ne serait pas une décision des plus sages. Également on paye pour les employés qui seront formés et travailleront auprès du robot.
+
+\item Minimiser le coût de remplacement des pièces :
+
+
+Enfin, s’il est nécessaire de racheter certaines pièces, il faut considérer s’il ne serait pas préférable de ne pas remplacer complètement la machine. Si les coûts arrivent proches de celui d’une nouvelle machine, il sera alors préférable d’en racheter une nouvelle car elle aura une meilleure durée de vie dans tous les cas. À partir de 20 000 dollars de réparation, il est impératif de changer de robot. Donc, l’efficacité en fonction du prix suit une courbe linéaire de type :
+E(S)=10-(0.005*S)
+
+\item Évaluation générale des coûts :
+
+\begin{tabular}{|l|c|r|}
+  \hline
+  prix(en dollars) & Pondération\\
+  \hline
+  0-20 000 & 1 \\
+  20 000 - 35 000 & 0.7 \\
+  35 000 -50 000 & 0.3 \\
+  50 000 et plus & 0\\
+  \hline
+\end{tabular}
+
+ 
+
+\end{enumerate}
+\end{document}
