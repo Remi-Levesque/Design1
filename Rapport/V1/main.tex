@@ -32,6 +32,7 @@
 \usepackage[utf8x]{inputenc}
 \usepackage[autolanguage]{numprint}
 \usepackage{icomma}
+\usepackage{wrapfig}
 %\usepackage[options]{nom_du_package}
 
 % Definition d'une commande pour presenter des cellules multilignes dans un tableau
@@ -49,8 +50,9 @@
 \newcolumntype{Z}[3]{>{#1\hspace{0pt}\arraybackslash}#2{#3}}
 
 % Definitions des parametres de la page titre
-\TitreProjet{Fish \& Chips}                         % Titre du projet
-\TitreRapport{Rapport de projet -- version 0}                       % Titre du rapport
+\TitreProjet{Fish \& Chips \\ Système autonome fixe pour le comptage et
+l’identification de la faune marine}                         % Titre du projet
+\TitreRapport{Rapport de projet -- version 1}                       % Titre du rapport
 \Destinataire{Robert Bergevin, Luc Lamontagne et Simon Thibault}         % Nom(s) du destinataire
 \NumeroEquipe{7}                                     % Numero de l'equipe
 \NomEquipe{Les Requins}                               % Nom de l'equipe
@@ -61,7 +63,7 @@
    111\,233\,742  & Honoré Marcotte & \\\hline        % matricule & nom & \\\hline
    111\,160\,242  & Jérémy Talbot-Pâquet& \\\hline        % matricule & nom & \\\hline
 }
-\DateRemise{31 janvier 2019}                           % Date de remis
+\DateRemise{21 février 2019}                           % Date de remis
 
 
 % Contenu de l'historique des versions
@@ -82,15 +84,15 @@
 \input{tex/introduction}
 \input{tex/description}
 \input{tex/objectifs}
-%\input{tex/cahier_des_charges}
+\input{tex/cahier_des_charges}
 %\input{tex/conceptualisation_et_analyse}
 %\input{tex/etude_preliminaire}
 %\input{tex/concept_retenu}
 %\input{tex/bibliographie}
 
 %   Annexes
-%\appendix
-%\input{tex/annexe}
+\appendix
+\input{tex/annexe}
 
 \end{document}
 % Fin du document
