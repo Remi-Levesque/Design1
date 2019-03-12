@@ -1,0 +1,160 @@
+%!TEX encoding = IsoLatin
+
+%
+% Exemple d'ordre du jour
+% par Pierre Tremblay, Universite Laval
+% modifie par Christian Gagne, Universite Laval
+% 2011/01/14 - version 1.4
+% modifié par Robert Bergevin, Université Laval
+% 24/11/2011
+% modifié par Jean-Yves Chouinard, Université Laval
+% 2016/01/11
+% modifié par Jean-Yves Chouinard, Université Laval
+% 2017/01/04
+%
+
+%--------------------------------------------------------------------------------------
+%------------------------------------- preambule --------------------------------------
+%--------------------------------------------------------------------------------------
+\documentclass[12pt]{ULojpv}
+
+% Chargement des packages supplementaires
+\usepackage[ansinew]{inputenc}
+
+% Definitions des parametres de l'en-tete
+\Cours{GEL--1001 Design I (méthodologie)}             % Nom du cours
+\NumeroEquipe{7}                                     % Numero de l'equipe
+\NomEquipe{Les Requins}                               % Nom de l'equipe
+\Objet{Ordre du jour \#7}                                 % Nom du document
+\SujetRencontre{Retour des concepts de solutions}        % Sujet de la rencontre
+\DateRencontre{2019/02/28}                            % Date de la rencontre
+\LocalRencontre{PLT--2708}                            % Local de la rencontre
+\HeureRencontre{8h30-10h20}                          % Heure de la rencontre
+
+%--------------------------------------------------------------------------------------
+%--------------------------------- corps du document ----------------------------------
+%--------------------------------------------------------------------------------------
+\begin{document}
+\entete
+\begin{enumerate}
+   \item \textbf{Ouverture de la réunion}
+  
+   Le quorum est constaté à 8:40.
+  
+   \item \textbf{Nomination ou confirmation du président et du secrétaire}
+  
+  
+   Honoré est confirmé comme secrétaire et Jérémy est confirmé comme président.
+  
+   \item \textbf{Lecture et adoption de l'ordre du jour}
+   
+   L'ordre du jour est adopté à l'unanimité à 8:40.
+   \item \textbf{Lecture et adoption du procès-verbal de la réunion du 21 février 2019}
+   
+   Le procès verbal de la rencontre précédente est adopté à l'unanimité.
+   \item \textbf{Affaires découlant du procès-verbal}
+	\begin{enumerate}
+		\item Rédaction et révision du rapport version 1
+
+		Jérémy souligne la qualité du travail remis. Cependant, il mentionne également qu'une certaine confusion entre critères et contraintes. De ce fait, nous essaierons d'améliorer le projet en temps et lieux. Également Jérémy nous souligne le fait de commencer la prochaine section plus en avance que la dernière fois afin d'optimiser la qualité du rapport.
+		\begin{enumerate}
+			\item Chapitre 3: Besoins et objectifs
+
+			Dû à un manque de temps, cette section sera traitée à la rencontre suivante.
+			\item Chapitre 4: Cahier des charges
+
+			Dû à un manque de temps, cette section sera traitée à la rencontre suivante.
+			\item Maison de qualité
+
+			Dû à un manque de temps, cette section sera traitée à la rencontre suivante.
+		\end{enumerate}
+	\end{enumerate}
+   \item \textbf{Points à traiter}
+      \begin{enumerate}
+	         \item Énumération des concepts de solution retenus
+
+	         Dû à un manque de temps, cette section sera traitée à la rencontre suivante.
+	\begin{enumerate}
+		\item Capteurs retenus
+
+		Dû à un manque de temps, cette section sera traitée à la rencontre suivante.
+		\item Choix des batteries
+
+		Dû à un manque de temps, cette section sera traitée à la rencontre suivante.
+		\item Système de reconnaissance des poissons
+
+		Dû à un manque de temps, cette section sera traitée à la rencontre suivante.
+		\item Capacité et système de stockage
+
+		Dû à un manque de temps, cette section sera traitée à la rencontre suivante.
+		\item Accès au système
+
+		Dû à un manque de temps, cette section sera traitée à la rencontre suivante.
+		\item Système de sécurité
+
+		Dû à un manque de temps, cette section sera traitée à la rencontre suivante.
+	\end{enumerate}
+		\item Évaluation du concept de solution \#1 selon les contraintes et les objectifs
+
+		Dû à un manque de temps, cette section sera traitée à la rencontre suivante.
+	\begin{enumerate}
+		\item Intervention humaine
+		\begin{enumerate}
+			\item Durée de vie de la batterie
+
+			Dû à un manque de temps, cette section sera traitée à la rencontre suivante.
+			\item Complexité de la maintenance
+
+			Dû à un manque de temps, cette section sera traitée à la rencontre suivante.
+			\item Automatisation du transfert de données
+
+			Dû à un manque de temps, cette section sera traitée à la rencontre suivante.
+			\item Accès à distance
+
+			Dû à un manque de temps, cette section sera traitée à la rencontre suivante.
+		\end{enumerate}
+		\item Qualité du produit
+		\begin{enumerate}
+			\item Durée de vie de l'appareil
+
+			Dû à un manque de temps, cette section sera traitée à la rencontre suivante.
+			\item Précision du logiciel de reconnaissance
+
+			Dû à un manque de temps, cette section sera traitée à la rencontre suivante.
+			\item Utilisation de l'interface graphique
+
+			Dû à un manque de temps, cette section sera traitée à la rencontre suivante.
+			\item Identification des poissons
+
+			Dû à un manque de temps, cette section sera traitée à la rencontre suivante.
+			\item Capacité de stockage des données
+
+			Dû à un manque de temps, cette section sera traitée à la rencontre suivante.
+			\item Fiabilité du système de sécurité
+
+			Dû à un manque de temps, cette section sera traitée à la rencontre suivante.
+		 \end{enumerate}
+	\end{enumerate}
+      \end{enumerate}
+   \item \textbf{Divers}
+   
+   Cette section n'a pas été discutée.
+   \item \textbf{Répartition des tâches}
+   
+   Honoré devra écrire le procès verbal de la réunion du 28 février.
+   Vincent aura à mettre à jour le diagramme de Gantt.
+   Jérémy sera responsable de l'écriture de l'ordre du jour de la prochaine rencontre.
+   L'équipe devra débuter l'écriture du rapport V2 lors de la semaine de lecture, sous la supervision de Rémi.
+   Les recherches seront effectuées par l'ensemble de l'équipe sous la supervision de Honoré et Vincent.
+   \item \textbf{Évaluation de la réunion}
+   
+   La réunion a suivi son cours mais a été arrêtée plus tôt en raison de l'examen ce qui nous a empêché de traiter la totalité des points prévus pour cette rencontre.
+   \item \textbf{Date, heure, lieu et objectif de la prochaine réunion}
+   
+   Dû à la semaine de lecture, la prochaine réunion se déroulera le 14 mars 2019 à 8h30 au lieu du 7 mars 2019 à 8h30.
+   \item \textbf{Fermeture de la réunion}
+   
+   La réunion se termine à 9 h12.
+\end{enumerate}
+
+\end{document}
