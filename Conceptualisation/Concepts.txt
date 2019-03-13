@@ -1,0 +1,97 @@
+*********************************
+Capteur optiques
+- GoPro
+
+- HP2W HYPERFIRE 2 PROFESSIONAL WHITE FLASH CAMERA
+
+- GoFish Cam (https://gofishcam.com/)
+	Utilisé pour la pêche
+	Enregistrement HD (1080P @ 60 FPS, 30 FPS, 720P @ 60FPS)
+	Jusqu'à profondeur de 150M (500 pieds)
+	Wifi intégré (connexion par application)
+	Night vision: Green LEDS pour la nuit et deep water
+	Armure solide et matériel de qualité militaire
+	Stabilisation d'images (forme aérodynamique pour enregistrement stable)
+	Partage social
+	Batterie rechargeable
+	Stockage MicroSD
+
+-Caméra "custom"
+	On créer notre propre caméra à l'aide d'une chip
+	Pas waterproof: On utilise
+
+-Caméra colonoscopy
+
+**********************************************************
+Stockage de données
+
+Carte SD caméra
+Cloud
+Disque dur:
+	- SSD
+	- HDD
+
+*********************************************************
+Alimentation
+
+Filaire
+Batterie:
+	- Lithium
+	- Plomb
+Turbine (énergie marine motrice)
+Génératrice
+Panneaux Solaire
+
+***********************************************************
+Système d'identification de poissons
+
+Tensorflow
+FishVerifyApp
+Développement par un tiers
+Réseaux de neurones: (résiduel vs convolutionnel)
+		- ResNet
+		- GoogLeNet/inception
+
+**********************************************************
+Sécurité
+
+md5 encryption key
+ssh private keys
+Compression spéciale de données
+VPN
+
+**********************************************************
+Interface locale
+
+Python:
+	- Tkinter
+	- PyQt
+C++:
+	-Qt
+WebHost
+Java
+
+**********************************************************
+Interface à distance
+
+Application
+Site Web
+Serveur
+
+
+
+***********************************************************
+Connexion à distance
+
+Blutooth
+WiFi
+Satellite
+Téléphonie cellulaire (4G, LTE)
+
+************************************************************
+Connexion locale
+
+Filaire
+
+************************************************************
+Système (alarme)
