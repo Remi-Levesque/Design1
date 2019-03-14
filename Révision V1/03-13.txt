@@ -1,0 +1,24 @@
+Analyse de faisabilité
+Aspects de l'analyse:
+ - Physiques:
+	Calculs s'il y a lieu afin de déterminer si le concept respecte les contraintes
+	Si concept rejeté, inutile de faire davantage de calcul
+ - Économiques
+	Estimer coûts des composantes
+ - Temporel
+	Recherche de problèmes pouvant retardé le projet
+ - Socio-Environnemental
+	La solution contrevient-elle à une loi, norme
+
+Il faut répondre à chaque aspects par : Oui / Oui mais / Non
+Après la réponse de chacun des aspects, décision du concept par : Retenu / Retenu mais / Rejeté
+
+À modifier des critère: La maintenance et le rafraichissement des données ne sont pas des critères pris en charge par le client
+	- Automatisation du transfert de données
+	- Complexité de la maintenance
+	- Cout de la maintenance
+	- Prise de mesure passive
+	- Accès à distance (le barème est pas bon)
+
+Modifier nos tableau de barèmes: La pondération 0 doit être remplacé par le mot « Rejeté », toutefois la pondération 0 peut exister.
+
