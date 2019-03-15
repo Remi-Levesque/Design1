@@ -5,11 +5,12 @@
 % par Pierre Tremblay, Universite Laval
 % modifie par Christian Gagne, Universite Laval
 % 2011/01/14 - version 1.4
-% modifié par Robert Bergevin, Université Laval
+% modifi\'e par Robert Bergevin, Universit\'e Laval
 % 24/11/2011
-% modifié par Jean-Yves Chouinard, Université Laval
+% modifi\'e par Jean-Yves Chouinard, Universit\'e Laval
 % 2016/01/11
-% modifié par Jean-Yves Chouinard, Université Laval
+%\]
+% moi\'e par Jean-Yves Chouinard, Universit\'e Laval
 % 2017/01/04
 %
 
@@ -20,6 +21,8 @@
 
 % Chargement des packages supplementaires
 \usepackage[ansinew]{inputenc}
+\usepackage{pifont}
+
 
 % Definitions des parametres de l'en-tete
 \Cours{GEL--1001 Design I (méthodologie)}             % Nom du cours
@@ -38,141 +41,414 @@
 \entete
 \begin{enumerate}
    \item \textbf{Ouverture de la réunion}
-  
-   Le quorum est constaté à 8h30.
-  
+
+	Le quorum est constaté à 8h30.
+
    \item \textbf{Nomination ou confirmation du président et du secrétaire}
-  
-   Jérémy est nommé président 
-  
-   \item \textbf{Lecture et adoption de l'ordre du jour}
    
-   L'ordre du jour est adopté à l'unanimité à 8h30.
-   \item \textbf{Lecture et adoption du procès-verbal de la réunion du 21 février 2019}
+ 	Jérémy et Vincent sont nommés respectivement président et secrétaire.
    
-   Le procès verbal de la rencontre précédente est adopté à l'unanimité.
+   \item \textbf{Lecture et adoption de l'ordre du jour du 14 mars 2019}
+   
+	L'élément 6.4 de l'ordre du jour n'a pas été adopté par l'équipe afin d'accorder plus de temps au concepts de solution retenus. 
+	Une révision des contraintes est également nécessaire avant de procéder à l'évaluation. L'évaluation des concepts de solutions selon les contraintes
+	et les objectifs sera possiblement abordé lors de la prochaine réunion. 
+   
+   \item \textbf{Lecture et adoption du procès-verbal de la réunion du 28 février 2019}
+  
+	Le procès-verbal est lu et adopté à l'unanimité.
+  
    \item \textbf{Affaires découlant du procès-verbal}
-	\begin{enumerate}
-		\item Rédaction et révision du rapport version 1
-
-		Jérémy souligne la qualité du travail remis. Cependant, il mentionne également qu'une certaine confusion entre critères et contraintes. De ce fait, nous essaierons d'améliorer le projet en temps et lieux. Également, Jérémy nous souligne le fait de commencer la prochaine section plus en avance que la dernière fois afin d'optimiser la qualité du rapport.
-		\begin{enumerate}
-			\item Chapitre 3: Besoins et objectifs
-
-			Dû à un manque de temps, cette section sera traitée à la rencontre suivante.
-			\item Chapitre 4: Cahier des charges
-
-			Dû à un manque de temps, cette section sera traitée à la rencontre suivante.
-			\item Maison de qualité
-
-			Dû à un manque de temps, cette section sera traitée à la rencontre suivante.
-		\end{enumerate}
-	\end{enumerate}
-   \item \textbf{Points à traiter}
       \begin{enumerate}
-	         \item Énumération des concepts de solution retenus
 
-	         Dû à un manque de temps, cette section sera traitée à la rencontre suivante.
+         \item Retour sur l'avancement de l'écriture du chapitre 5
+            
+		Jérémy, Vincent, Ibrahim et Rémi ont collaborés ensemble à la création du diagramme fonctionnel.
+		Le partage des idées a permis d'énumérer les intrants, les fonctions et les extrants de la façons suivante:
+
+		\begin{enumerate}
+
+		\item Intrants
+
+			\begin{enumerate}
+
+			\item Poissons
+			\item Source d'énergie
+			\item État du milieu
+
+			\end{enumerate}
+
+		\item Fonctions
+
+			\begin{enumerate}
+
+			\item Capter les informations sur les poissons
+			\item Alimenter le capteur
+			\item Acheminer les informations au centre de contrôle
+			\item Identifier les poissons et compiler les données
+			\item Mesurer les données environnementales
+			\item Stocker les données
+			\item Assurer un accès sécurisé aux données
+
+			\end{enumerate}
+
+		\item Extrants
+
+			\begin{enumerate}
+
+			\item Base de données
+			\item Alarme
+
+			\end{enumerate}
+
+		\end{enumerate} 
+
+	\item Retour sur les recherches effectuées par chaque membre de l'équipe
+
+		L'ensemble de l'équipe avait comme principal objectif de trouver des concepts de solution pertinant pour le projet. 
+		Certaine solutions des réunions antérieures ont d'ailleurs été récupérées. La recherche de composantes se basait 
+		principalement sur les différentes fonctions que le système doit effectuer. Les différentes composantes et leurs solutions
+		trouvées constituent la liste ci-dessous.
+
+		\begin{enumerate}
+
+		\item Capteur optique
+
+			\begin{enumerate}
+				
+				\item GoPro Hero7 Black Edition
+				\item PC900C Hyperfire Cellular Professional Covert Camera Trap
+				\item HP2W Hyperfire 2 Professional White Flash Camera
+				\item GoFish Cam
+				\item Caméra construite sur mesure 
+				\item Caméra médicale IMPERX B0620
+
+			\end{enumerate}
+
+		\item Stockage de donnée
+
+			\begin{enumerate}
+				
+				\item Carte SD
+				\item Cloud
+				\item Disque dur SSD
+				\item Disque dur HDD
+				
+			\end{enumerate}
+
+		\item Alimentation
+
+			\begin{enumerate}
+				
+				\item Filaire
+				\item Batterie au Lithium
+				\item Batterie au Plomb
+				\item Système de turbine et d'énergie marine motrice
+				\item Génératrice
+				\item Panneaux Solaires
+
+			\end{enumerate}
+
+		\item Système d'identification des poissons
+
+			\begin{enumerate}
+				
+				\item Tensorflow
+				\item FishVerifyApp
+				\item Développement (entraînement de l'intelligence artificielle) par un tiers
+				\item Réseaux de neurones ResNet
+				\item Réseux de neurones GoogLeNet/inception
+
+			\end{enumerate}
+
+		\item Sécurité
+
+			\begin{enumerate}
+				
+				\item MD5 Encryption key
+				\item SSH Private keys
+				\item Compression spéciale des données
+				\item VPN
+
+			\end{enumerate}
+
+		\item Interface locale
+
+			\begin{enumerate}
+				
+				\item Tkinter (Python)
+				\item PyQt (Python)
+				\item Qt (C++)
+				\item WebHost
+				\item Java
+
+			\end{enumerate}
+
+		\item Interface à distance
+
+			\begin{enumerate}
+				
+				\item Application
+				\item Site Web
+				\item Serveur
+
+			\end{enumerate}
+
+		\item Connexion à distance
+
+			\begin{enumerate}
+				
+				\item Bluetooth
+				\item Wifi
+				\item Satellite
+				\item Réseau téléphonie cellulaire (4G, LTE)
+
+			\end{enumerate}
+
+		\end{enumerate} 
+
+      \end{enumerate}
+
+
+     \item \textbf{Points à traiter}
+
 	\begin{enumerate}
+
+	\item Revue des points à aborder dans le rapport V2
+
+		\begin{enumerate}
+
+		\item Conception du diagramme fonctionnel
+
+			Jérémy rappelle que la conception du diagramme fonctionnel doit s'effectué avant la rédaction des concepts de solutions. En effet, 
+			le diagramme comprend des fonctions qui permettent de mieux déterminer les principales composantes requises au système. Les liens entre
+			les diverses fonctions doivent être explicites. De plus, Vincent rappelle qu'un court texte devra être ajouter au diagramme fonctionnel afin 
+			d'expliquer les liens entre les fonctions.
+
+		\item Présentation de 4 concepts différents et réalisables
+			
+			Le client rappelle que les fonctions du diagramme fonctionnel doivent refléter les composantes nécessaire à la réalisation du système. Chacune
+			des composantes doit proposer 4 solutions différentes. Ces solutions ne sont pas obligatoirement réalisables et idéales. Cependant, une solution parmi
+			celles proposées doit être retenue. Une solution peut également être retenue, même si le barème de certains objectifs pour ce produit est de 0.  
+
+		\item Documentation et explication des concepts
+
+			Lors de la rédaction, il est nécessaire de décrire les caractéristiques et le fonctionnement du produit proposé. De cette manière, il sera
+			 plus facile d'effectuer l'analyse de faisabilité de la solution. Il est important de ne pas mentionner les atouts hors contexte que le produit
+			pourrait amener au système. Ces « bonus » pourront néanmoins être mentionner lors de la présentation orale.
+			 
+
+		\item  Analyse de faisabilité selon les critères établis au chapitre 4
+
+			4 concepts permettent d'évaluer la faisabilité d'une solution. Il est donc nécessaire d'analyser les solutions proposées selon leurs aspects
+			physiques, économiques, temporels et sociaux-environnementaux. L'ensemble de l'équipe s'entend à effectuer les recherches nécessaires
+			pour trouver le maximum d'informations sur les produits.
+
+		\item Choix des composantes selon le diagramme fonctionnel
+		
+			Une composante doit être en mesure d'accomplir une fonction du diagramme fonctionnel. Il ne peut y avoir plus d'une composante pour effectuer un fonction. 
+
+		\end{enumerate}
+
+	\item Éléments importants du diagramme fonctionnel
+
+			Jérémy propose de faire vérifier le diagramme fonctionnel par le client. Certaines erreurs quant à l'énumération des intrants et des fonctions ont été constatées.
+			Les membres de l'équipe posent des questions au client afin de clarifier les notions d'intrants et de fonctions. Les intrants concernant « l'état du milieux » doivent être plus précis
+			puisque ce n'est pas nécessairement la même composante qui va mesurer les différentes conditions climatiques. L'ensemble de l'équipe décide de travailler à régler les problèmes
+			 du diagramme fonctionnel, puisqu'il est primordial à la recherche des composantes. Le diagramme fonctionnel est maintenant divisé de la manière suivante:
+
+			\begin{enumerate}
+
+			\item Intrants
+
+				\begin{enumerate}
+
+				\item Poissons
+				\item Source d'énergie
+				\item État du milieu
+				\item Données de poissons
+				\item Température intérieure
+				\item Température extérieure
+				\item Date et heure
+
+				\end{enumerate}
+
+			\item Fonctions
+
+				\begin{enumerate}
+
+				\item Capter les informations sur les poissons
+				\item Alimenter le capteur
+				\item Acheminer les informations au centre de contrôle
+				\item Identifier les poissons et compiler les données
+				\item Mesurer la température intérieure
+				\item Mesurer la température extérieure
+				\item Mesurer la date et l'heure
+				\item Stocker les données
+				\item Assurer un accès sécurisé aux données
+
+				\end{enumerate}
+
+			\item Extrants
+
+				\begin{enumerate}
+
+				\item Base de données
+				\item Alarme
+
+				\end{enumerate}
+
+			\end{enumerate}	
+
+	\item Énumération des concepts de solution retenues
+
+		Suite aux recherches effectuées depuis la dernière rencontre, l'équipe a trouvé des solutions intéressantes concernant certaines composantes.
+		Rémi propose de faire un tri parmi les solutions trouvées et de limiter nos solutions à 4 concepts seulement. Des discussions ont alors lieux afin de déterminer
+		la pertinence de certaines solutions. 
+		
+		\begin{enumerate}
+
 		\item Capteurs retenus
 
-		Dû à un manque de temps, cette section sera traitée à la rencontre suivante.
+			\begin{enumerate}
+
+			\item GoPro Hero7 Black Edition
+			\item HP2W Hyperfire 2 Professional White Flash Camera
+			\item Caméra construite sur mesure 
+			\item Caméra médicale IMPERX B0620
+
+			\end{enumerate}	
+
 		\item Choix des batteries
 
-		Dû à un manque de temps, cette section sera traitée à la rencontre suivante.
+			\begin{enumerate}
+
+			\item Filaire
+			\item Batterie au Lithium
+			\item Batterie au Plomb
+			\item Panneaux Solaires
+
+			\end{enumerate}
+
 		\item Système de reconnaissance des poissons
 
-		Dû à un manque de temps, cette section sera traitée à la rencontre suivante.
+			\begin{enumerate}
+
+			\item Tensorflow
+			\item Développement (entraînement de l'intelligence artificielle) par un tiers
+			\item Réseaux de neurones ResNet
+			\item Réseux de neurones GoogLeNet/inception
+
+			\end{enumerate}
+
 		\item Capacité et système de stockage
 
-		Dû à un manque de temps, cette section sera traitée à la rencontre suivante.
+			\begin{enumerate}
+
+			\item Carte SD
+			\item Cloud
+			\item Disque dur SSD
+			\item Disque dur HDD
+
+			\end{enumerate}
+
 		\item Accès au système
 
-		Dû à un manque de temps, cette section sera traitée à la rencontre suivante.
+			\begin{enumerate}
+
+			\item Bluetooth
+			\item Wifi
+			\item Satellite
+			\item Réseau téléphonie cellulaire (4G, LTE)
+
+			\end{enumerate}
+
 		\item Système de sécurité
 
-		Dû à un manque de temps, cette section sera traitée à la rencontre suivante.
-	\end{enumerate}
-		\item Évaluation du concept de solution \#1 selon les contraintes et les objectifs
+			\begin{enumerate}
 
-		Dû à un manque de temps, cette section sera traitée à la rencontre suivante.
-	\begin{enumerate}
-		\item Intervention humaine
-		\begin{enumerate}
-			\item Durée de vie de la batterie
+			\item MD5 Encryption key
+			\item SSH Private keys
+			\item Compression spéciale des données
+			\item VPN
+			
+			\end{enumerate}
 
-			Dû à un manque de temps, cette section sera traitée à la rencontre suivante.
-			\item Complexité de la maintenance
-
-			Dû à un manque de temps, cette section sera traitée à la rencontre suivante.
-			\item Automatisation du transfert de données
-
-			Dû à un manque de temps, cette section sera traitée à la rencontre suivante.
-			\item Accès à distance
-
-			Dû à un manque de temps, cette section sera traitée à la rencontre suivante.
 		\end{enumerate}
-		\item Qualité du produit
-		\begin{enumerate}
-			\item Durée de vie de l'appareil
 
-			Dû à un manque de temps, cette section sera traitée à la rencontre suivante.
-			\item Précision du logiciel de reconnaissance
-
-			Dû à un manque de temps, cette section sera traitée à la rencontre suivante.
-			\item Utilisation de l'interface graphique
-
-			Dû à un manque de temps, cette section sera traitée à la rencontre suivante.
-			\item Identification des poissons
-
-			Dû à un manque de temps, cette section sera traitée à la rencontre suivante.
-			\item Capacité de stockage des données
-
-			Dû à un manque de temps, cette section sera traitée à la rencontre suivante.
-			\item Fiabilité du système de sécurité
-
-			Dû à un manque de temps, cette section sera traitée à la rencontre suivante.
-		 \end{enumerate}
 	\end{enumerate}
-      \end{enumerate}
-   \item \textbf{Divers}
-   \begin{enumerate}
-   
-   	\item Chapitre 5
-	
-	L'équipe a révisée les notions nécessaires et les sections du chapitre 5. Il faudra penser aux différentes fonctions du projet et produire un diagramme fonctionnel. De plus, nous devrons choisir 4 concepts et effectuer l'analyse de ceux-ci par rapport aux critères établis au chapitre 4. Il est à noter que plusieurs idéées de concept ont déjà été discutées lors des premières rencontres. Il sera utile de se référer aux procès-verbaux de ces rencontres lors de la recherche.
-   	
-   	\item Contrôle informatique individuel
-   	
-   	Vincent, étant le plus expérimenté avec Gantt, nous a fait part de ses trucs pour faire un bon diagramme. L'équipe a aussi fait une révision des notions de base dans Gantt.
-   
-   \end{enumerate}
-   
-   
-   
+
+
+\item \textbf{Divers}
+
+Jérémy, Vincent, Rémi et Honoré ont observé la correction du rapport V1. Les critères qui présentent des erreurs devront être suivis et corrigées attentivement. 
+Une révision des barèmes est nécessaire afin d'effectuer adéquatement l'analyse de faisabilité des concepts retenus. 
+
    \item \textbf{Répartition des tâches}
    
-   Assignation \#1: Honoré devra écrire le procès verbal de la réunion du 28 février pour le 12 mars à 19h.
    
-   Assignation \#2: Vincent aura à mettre à jour le diagramme de Gantt pour le 12 mars à 19h.
-   
-   Assignation \#3: Jérémy sera responsable de l'écriture de l'ordre du jour de la prochaine rencontre pour le 12 mars à 19h.
-   
-   Assignation \#4: L'équipe devra débuter l'écriture du rapport V2 lors de la semaine de lecture jusqu'au 13 mars à 20h.  Rémi est responsable de l'avancement de l'écriture.
-   
-   Assignation \#5: Les recherches seront effectuées par l'ensemble de l'équipe jusqu'au 13 mars à 20h. Honoré est responsable du bon déroulement des recherches.
-   
-   Assignation \#6: Jérémy est chargé de faire la remise G09 avant le 13 mars à 15h.
+	Assignation \#1: Vincent est chargé de faire le procès-verbal \#9 de la réunion du 14  mars 2019. Il se doit de le soumettre à l'équipe pour mardi le 19 mars 2019 avant 19h.
+
+	Assignation \#2: Ibrahim est chargé de faire l'ordre du jour \#10 de la réunion du 21 mars 2019. Il se doit de le soumettre à l'équipe pour mardi le 19 mars 2019 avant 19h.
+
+	Assignation \#3: Honoré est chargé de mettre à jour le diagramme de Gantt de la réunion du 14 mars 2019. Il se doit de le soumettre à l'équipe pour mardi le 19 mars 2019 avant 19h.
+
+	Assignation \#4: Jérémy et Vincent sont chargés de la révision des critères pour dimanche le 17 mars avant 19h. Jérémy est nommé responsable.
+
+	Assignation \#5: Jérémy est chargé de mettre à jour le diagramme fonctionnel avant mercredi 20 mars 2019 à 12h.
+
+	Assignation \#6: Vincent et Jérémy sont chargés de la rédaction de la fonction de capter les informations sur les poissons avant mercredi 20 mars à 12h. Vincent est nommé responsable.
+
+	Assignation \#7: Ibrahim et Honoré sont chargés de la rédaction de la fonction d'alimenter le capteur avant mercredi 20 mars à 12h. Ibrahim est nommé responsable.
+
+	Assignation \#8: Jérémy est chargé de la rédaction de la fonction d'acheminer les informations au centre de contrôle avant mercredi 20 mars à 12h.
+
+	Assignation \#9: Rémi et Vincent sont chargés de la rédaction de la fonction d'identifier les poissons et de compiler les données avant mercredi 20 mars à 12h. Rémi est nommé responsable.
+
+	Assignation \#10: Honoré est chargé de la rédaction de la fonction de mesurer la température intérieure avant mercredi 20 mars à 12h.
+
+	Assignation \#11: Honoré est chargé de la rédaction de la fonction de mesurer la température extérieure avant mercredi 20 mars à 12h.
+
+	Assignation \#12: Jérémy est chargé de la rédaction de la fonction de mesurer la date et l'heure avant mercredi 20 mars à 12h.
+
+	Assignation \#13: Honoré est chargé de la rédaction de la fonction de stocker les données avant mercredi 20 mars à 12h.
+
+	Assignation \#14: Rémi est chargé de la rédaction de la fonction d'assurer un accès sécurisé au système avant mercredi 20 mars à 12h.
+
+	Assignation \#15: Vincent est nommé responsable de la remise G10 pour le 20 mars 2019 à 15h.
    
    \item \textbf{Évaluation de la réunion}
+  
+ La réunion s'est bien très déroulée. L'équipe a été très productive concernant la retenue des différents concepts et l'assignation des tâches.
    
-   La réunion a suivi son cours mais a été arrêtée plus tôt en raison du contrôle individuel informatique ce qui nous a empêché de traiter la totalité des points prévus pour cette rencontre.
    \item \textbf{Date, heure, lieu et objectif de la prochaine réunion}
    
-   Dû à la semaine de lecture, la prochaine réunion se déroulera le 14 mars 2019 à 8h30 au lieu du 7 mars 2019 à 8h30.
-   \item \textbf{Fermeture de la réunion}
-   
-   La réunion se termine à 9 h12.
+   \begin{tabular}{@{}lll}
+   Date: 2019/03/21
+   & Heure: 08h30
+   &  Lieu: PLT--2708
+   \end{tabular}
+
+\par
+La prochaine réunion portera si besoins sur des modifications finales à apporter au rapport avant la remise. Si ce n'est pas fait d'ici-là, l'équipe devra aborder les correction à faire suite à la correction du rapport V1.
+Si possible, une discution aura lieu concernant le concept final retenu.
+
+\item \textbf{Fermeture de la réunion}
+
+Heure: 10h20
+
+% nouveau point
+\item \textbf{Étaient présents}
+
+
+\begin{dinglist}{"33}
+   \item Rémi
+   \item Vincent
+   \item Ibrahim
+   \item Honoré
+   \item Jérémy
+\end{dinglist}
+
 \end{enumerate}
 
 \end{document}
