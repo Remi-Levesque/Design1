@@ -1,11 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Design I - Les Requins" company="" webLink="http://" view-date="2019-02-25" view-index="0" gantt-divider-location="539" resource-divider-location="300" version="2.8.10" locale="fr">
+<?xml version="1.0" encoding="UTF-8"?><project name="Design I - Les Requins" company="" webLink="http://" view-date="2019-03-04" view-index="1" gantt-divider-location="539" resource-divider-location="300" version="2.8.9" locale="fr">
     <description/>
     <view zooming-state="default:4" id="gantt-chart">
-        <field id="tpd3" name="Nom" width="237" order="0"/>
-        <field id="tpd4" name="Date de début" width="109" order="1"/>
-        <field id="tpd5" name="Date de fin" width="102" order="2"/>
-        <field id="tpd8" name="Responsable" width="87" order="3"/>
-        <timeline><![CDATA[73,173,153,156]]></timeline>
+        <field id="tpd3" name="Nom" width="230" order="0"/>
+        <field id="tpd4" name="Date de début" width="106" order="1"/>
+        <field id="tpd5" name="Date de fin" width="99" order="2"/>
+        <field id="tpd8" name="Responsable" width="85" order="3"/>
+        <option id="taskLabelUp" value="name"/>
+        <option id="taskLabelLeft" value="resources"/>
+        <timeline><![CDATA[73,153,534,173,156]]></timeline>
         <option id="color.recent"><![CDATA[#000000 #ff0000 #ff0033]]></option>
     </view>
     <view id="resource-table">
@@ -36,7 +38,7 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="28" name="Projet Global" color="#000000" meeting="false" start="2019-01-17" duration="91" complete="67" thirdDate="2019-01-16" thirdDate-constraint="0" expand="true">
+        <task id="28" name="Projet Global" color="#000000" meeting="false" start="2019-01-17" duration="91" complete="64" thirdDate="2019-01-16" thirdDate-constraint="0" expand="true">
             <task id="71" name="G02" color="#8cb6ce" meeting="false" start="2019-01-17" duration="6" complete="85" thirdDate="2019-01-16" thirdDate-constraint="0" expand="false">
                 <depend id="72" type="2" difference="0" hardness="Strong"/>
                 <task id="254" name="OJ" color="#8cb6ce" meeting="false" start="2019-01-17" duration="6" complete="100" thirdDate="2019-01-14" thirdDate-constraint="0" expand="true"/>
@@ -101,6 +103,7 @@
                 <task id="339" name="Remise GestionG07" color="#8cb6ce" meeting="true" start="2019-02-27" duration="0" complete="0" thirdDate="2019-02-04" thirdDate-constraint="0" expand="true"/>
             </task>
             <task id="82" name="G09" color="#8cb6ce" meeting="false" start="2019-02-28" duration="13" complete="94" thirdDate="2019-01-16" thirdDate-constraint="0" expand="false">
+                <depend id="83" type="2" difference="0" hardness="Strong"/>
                 <task id="434" name="PV" color="#8cb6ce" meeting="false" start="2019-02-28" duration="8" complete="100" thirdDate="2019-01-21" thirdDate-constraint="0" expand="true">
                     <depend id="437" type="2" difference="0" hardness="Strong"/>
                     <depend id="443" type="2" difference="0" hardness="Strong"/>
@@ -109,17 +112,25 @@
                 <task id="443" name="Diagramme de Gantt" color="#8cb6ce" meeting="false" start="2019-03-08" duration="5" complete="100" thirdDate="2019-02-28" thirdDate-constraint="0" expand="true"/>
                 <task id="345" name="Remise GestionG09" color="#8cb6ce" meeting="true" start="2019-03-13" duration="0" complete="0" thirdDate="2019-02-04" thirdDate-constraint="0" expand="true"/>
             </task>
-            <task id="83" name="G10" color="#8cb6ce" meeting="false" start="2019-03-14" duration="6" complete="100" thirdDate="2019-01-16" thirdDate-constraint="0" expand="false">
-                <task id="470" name="OJ" color="#8cb6ce" meeting="false" start="2019-03-14" duration="6" complete="100" thirdDate="2019-03-04" thirdDate-constraint="0" expand="true"/>
-                <task id="471" name="Diagramme de Gantt" color="#8cb6ce" meeting="false" start="2019-03-14" duration="6" complete="100" thirdDate="2019-02-25" thirdDate-constraint="0" expand="true"/>
-                <task id="472" name="PV" color="#8cb6ce" meeting="false" start="2019-03-14" duration="6" complete="100" thirdDate="2019-03-04" thirdDate-constraint="0" expand="true"/>
+            <task id="83" name="G10" color="#8cb6ce" meeting="false" start="2019-03-14" duration="6" complete="90" thirdDate="2019-01-16" thirdDate-constraint="0" expand="true">
+                <task id="472" name="PV" color="#8cb6ce" meeting="false" start="2019-03-14" duration="3" complete="100" thirdDate="2019-03-04" thirdDate-constraint="0" expand="true">
+                    <depend id="350" type="2" difference="0" hardness="Strong"/>
+                    <depend id="470" type="2" difference="0" hardness="Strong"/>
+                    <depend id="471" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="470" name="OJ" color="#8cb6ce" meeting="false" start="2019-03-17" duration="3" complete="100" thirdDate="2019-03-04" thirdDate-constraint="0" expand="true">
+                    <depend id="350" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="471" name="Diagramme de Gantt" color="#8cb6ce" meeting="false" start="2019-03-17" duration="3" complete="100" thirdDate="2019-02-25" thirdDate-constraint="0" expand="true">
+                    <depend id="350" type="2" difference="0" hardness="Strong"/>
+                </task>
                 <task id="350" name="Remise GestionG10" color="#8cb6ce" meeting="true" start="2019-03-20" duration="0" complete="0" thirdDate="2019-02-04" thirdDate-constraint="0" expand="true"/>
             </task>
             <task id="85" name="G11" color="#8cb6ce" meeting="false" start="2019-03-21" duration="6" complete="0" thirdDate="2019-01-16" thirdDate-constraint="0" expand="true"/>
             <task id="354" name="Remise GestionG11" color="#8cb6ce" meeting="true" start="2019-03-27" duration="0" complete="0" thirdDate="2019-03-04" thirdDate-constraint="0" expand="true"/>
             <task id="86" name="G12" color="#8cb6ce" meeting="false" start="2019-03-28" duration="6" complete="0" thirdDate="2019-01-16" thirdDate-constraint="0" expand="true"/>
             <task id="357" name="Remise GestionG12" color="#8cb6ce" meeting="true" start="2019-04-03" duration="0" complete="0" thirdDate="2019-03-04" thirdDate-constraint="0" expand="true"/>
-            <task id="114" name="Rapport" color="#8cb6ce" meeting="false" start="2019-01-25" duration="83" complete="59" thirdDate="2019-01-14" thirdDate-constraint="0" expand="true">
+            <task id="114" name="Rapport" color="#8cb6ce" meeting="false" start="2019-01-25" duration="83" complete="54" thirdDate="2019-01-14" thirdDate-constraint="0" expand="true">
                 <task id="119" name="Introduction" color="#8cb6ce" meeting="false" start="2019-01-25" duration="3" complete="100" thirdDate="2019-01-14" thirdDate-constraint="0" expand="true">
                     <depend id="125" type="2" difference="0" hardness="Strong"/>
                 </task>
@@ -143,13 +154,28 @@
                 <task id="80" name="Remise rapport version V1" color="#8cb6ce" meeting="true" start="2019-02-21" duration="0" complete="0" thirdDate="2019-01-16" thirdDate-constraint="0" priority="2" expand="true">
                     <depend id="84" type="2" difference="0" hardness="Strong"/>
                 </task>
-                <task id="135" name="Conceptualisation et analyse de faisabilité" color="#8cb6ce" meeting="false" start="2019-02-28" duration="21" complete="96" thirdDate="2019-01-28" thirdDate-constraint="0" expand="true">
+                <task id="135" name="Conceptualisation et analyse de faisabilité" color="#8cb6ce" meeting="false" start="2019-02-28" duration="21" complete="77" thirdDate="2019-01-28" thirdDate-constraint="0" expand="true">
                     <depend id="138" type="2" difference="0" hardness="Strong"/>
                     <task id="462" name="Recherche des concepts" color="#8cb6ce" meeting="false" start="2019-02-28" duration="14" complete="100" thirdDate="2019-02-21" thirdDate-constraint="0" expand="true">
                         <depend id="451" type="1" difference="0" hardness="Strong"/>
                     </task>
-                    <task id="451" name="Rédaction" color="#8cb6ce" meeting="false" start="2019-02-28" duration="14" complete="100" thirdDate="2019-02-21" thirdDate-constraint="0" expand="true">
+                    <task id="451" name="Rédaction" color="#8cb6ce" meeting="false" start="2019-02-28" duration="14" complete="30" thirdDate="2019-02-21" thirdDate-constraint="0" expand="true">
                         <depend id="84" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="474" name="Révision des critères" color="#8cb6ce" meeting="false" start="2019-03-14" duration="4" complete="100" thirdDate="2019-02-21" thirdDate-constraint="0" expand="true"/>
+                    <task id="494" name="Diagramme Fonctionnel" color="#8cb6ce" meeting="false" start="2019-03-14" duration="7" complete="100" thirdDate="2019-02-25" thirdDate-constraint="0" expand="true"/>
+                    <task id="490" name="Rédaction" color="#8cb6ce" meeting="false" start="2019-03-14" duration="7" complete="100" thirdDate="2019-02-25" thirdDate-constraint="0" expand="true">
+                        <task id="492" name="Capter les informations sur les poissons" color="#8cb6ce" meeting="false" start="2019-03-14" duration="7" complete="100" thirdDate="2019-02-25" thirdDate-constraint="0" expand="true"/>
+                        <task id="497" name="Alimenter le capteur" color="#8cb6ce" meeting="false" start="2019-03-14" duration="7" complete="100" thirdDate="2019-02-25" thirdDate-constraint="0" expand="true"/>
+                        <task id="499" name="Acheminer les information au centre de contrôle" color="#8cb6ce" meeting="false" start="2019-03-14" duration="7" complete="100" thirdDate="2019-02-25" thirdDate-constraint="0" expand="true"/>
+                        <task id="501" name="Identifier les poissons et compiler les données" color="#8cb6ce" meeting="false" start="2019-03-14" duration="7" complete="100" thirdDate="2019-02-25" thirdDate-constraint="0" expand="true"/>
+                        <task id="503" name="Mesurer la température intérieure" color="#8cb6ce" meeting="false" start="2019-03-14" duration="7" complete="100" thirdDate="2019-02-25" thirdDate-constraint="0" expand="true"/>
+                        <task id="505" name="Mesurer la température extérieure" color="#8cb6ce" meeting="false" start="2019-03-14" duration="7" complete="100" thirdDate="2019-02-25" thirdDate-constraint="0" expand="true"/>
+                        <task id="507" name="Mesurer la date et l'heure" color="#8cb6ce" meeting="false" start="2019-03-14" duration="7" complete="100" thirdDate="2019-02-25" thirdDate-constraint="0" expand="true"/>
+                        <task id="509" name="Stocker les données" color="#8cb6ce" meeting="false" start="2019-03-14" duration="7" complete="100" thirdDate="2019-02-25" thirdDate-constraint="0" expand="true"/>
+                        <task id="512" name="Assurer un accès sécurisé" color="#8cb6ce" meeting="false" start="2019-03-14" duration="7" complete="100" thirdDate="2019-02-25" thirdDate-constraint="0" expand="true"/>
+                        <task id="532" name="Afficher les données" color="#8cb6ce" meeting="false" start="2019-03-14" duration="7" complete="100" thirdDate="2019-03-04" thirdDate-constraint="0" expand="true"/>
+                        <task id="534" name="Analyser l'état du système" color="#8cb6ce" meeting="false" start="2019-03-14" duration="7" complete="100" thirdDate="2019-03-04" thirdDate-constraint="0" expand="true"/>
                     </task>
                     <task id="84" name="Remise rapport version V2" color="#8cb6ce" meeting="true" start="2019-03-21" duration="0" complete="0" thirdDate="2019-03-21" thirdDate-constraint="1" expand="true"/>
                 </task>
@@ -189,6 +215,9 @@
         <allocation task-id="80" resource-id="0" function="Default:1" responsible="true" load="0.0"/>
         <allocation task-id="451" resource-id="0" function="Default:1" responsible="true" load="50.0"/>
         <allocation task-id="462" resource-id="0" function="Default:1" responsible="false" load="50.0"/>
+        <allocation task-id="501" resource-id="0" function="Default:1" responsible="true" load="50.0"/>
+        <allocation task-id="512" resource-id="0" function="Default:1" responsible="true" load="35.0"/>
+        <allocation task-id="534" resource-id="0" function="Default:1" responsible="true" load="15.0"/>
         <allocation task-id="119" resource-id="1" function="Default:1" responsible="false" load="25.0"/>
         <allocation task-id="125" resource-id="1" function="Default:1" responsible="true" load="60.0"/>
         <allocation task-id="142" resource-id="1" function="Default:1" responsible="true" load="10.0"/>
@@ -205,7 +234,13 @@
         <allocation task-id="443" resource-id="1" function="Default:1" responsible="true" load="10.0"/>
         <allocation task-id="451" resource-id="1" function="Default:1" responsible="false" load="20.0"/>
         <allocation task-id="462" resource-id="1" function="Default:1" responsible="false" load="70.0"/>
-        <allocation task-id="472" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="472" resource-id="1" function="Default:1" responsible="true" load="10.0"/>
+        <allocation task-id="350" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="474" resource-id="1" function="Default:1" responsible="false" load="20.0"/>
+        <allocation task-id="492" resource-id="1" function="Default:1" responsible="true" load="30.0"/>
+        <allocation task-id="501" resource-id="1" function="Default:1" responsible="false" load="20.0"/>
+        <allocation task-id="532" resource-id="1" function="Default:1" responsible="true" load="10.0"/>
+        <allocation task-id="534" resource-id="1" function="Default:1" responsible="false" load="10.0"/>
         <allocation task-id="74" resource-id="2" function="Default:1" responsible="true" load="30.0"/>
         <allocation task-id="151" resource-id="2" function="Default:1" responsible="true" load="70.0"/>
         <allocation task-id="153" resource-id="2" function="Default:1" responsible="true" load="20.0"/>
@@ -222,6 +257,12 @@
         <allocation task-id="451" resource-id="2" function="Default:1" responsible="false" load="40.0"/>
         <allocation task-id="462" resource-id="2" function="Default:1" responsible="false" load="40.0"/>
         <allocation task-id="84" resource-id="2" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="474" resource-id="2" function="Default:1" responsible="true" load="20.0"/>
+        <allocation task-id="494" resource-id="2" function="Default:1" responsible="true" load="10.0"/>
+        <allocation task-id="492" resource-id="2" function="Default:1" responsible="false" load="10.0"/>
+        <allocation task-id="499" resource-id="2" function="Default:1" responsible="true" load="30.0"/>
+        <allocation task-id="507" resource-id="2" function="Default:1" responsible="true" load="20.0"/>
+        <allocation task-id="534" resource-id="2" function="Default:1" responsible="false" load="10.0"/>
         <allocation task-id="151" resource-id="3" function="Default:0" responsible="false" load="100.0"/>
         <allocation task-id="156" resource-id="3" function="Default:0" responsible="true" load="20.0"/>
         <allocation task-id="169" resource-id="3" function="Default:0" responsible="true" load="80.0"/>
@@ -229,7 +270,9 @@
         <allocation task-id="134" resource-id="3" function="Default:0" responsible="false" load="100.0"/>
         <allocation task-id="451" resource-id="3" function="Default:0" responsible="false" load="50.0"/>
         <allocation task-id="462" resource-id="3" function="Default:0" responsible="false" load="50.0"/>
-        <allocation task-id="470" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="470" resource-id="3" function="Default:0" responsible="true" load="10.0"/>
+        <allocation task-id="497" resource-id="3" function="Default:0" responsible="true" load="70.0"/>
+        <allocation task-id="534" resource-id="3" function="Default:0" responsible="false" load="20.0"/>
         <allocation task-id="73" resource-id="4" function="Default:0" responsible="true" load="20.0"/>
         <allocation task-id="151" resource-id="4" function="Default:0" responsible="false" load="80.0"/>
         <allocation task-id="164" resource-id="4" function="Default:0" responsible="true" load="10.0"/>
@@ -241,7 +284,11 @@
         <allocation task-id="434" resource-id="4" function="Default:0" responsible="true" load="10.0"/>
         <allocation task-id="451" resource-id="4" function="Default:0" responsible="false" load="10.0"/>
         <allocation task-id="462" resource-id="4" function="Default:0" responsible="true" load="80.0"/>
-        <allocation task-id="471" resource-id="4" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="471" resource-id="4" function="Default:0" responsible="true" load="10.0"/>
+        <allocation task-id="497" resource-id="4" function="Default:0" responsible="false" load="10.0"/>
+        <allocation task-id="503" resource-id="4" function="Default:0" responsible="true" load="25.0"/>
+        <allocation task-id="505" resource-id="4" function="Default:0" responsible="true" load="25.0"/>
+        <allocation task-id="509" resource-id="4" function="Default:0" responsible="true" load="30.0"/>
     </allocations>
     <vacations/>
     <previous/>
