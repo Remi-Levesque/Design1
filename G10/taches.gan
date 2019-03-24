@@ -1,13 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Design I - Les Requins" company="" webLink="http://" view-date="2019-03-04" view-index="1" gantt-divider-location="539" resource-divider-location="300" version="2.8.9" locale="fr">
+<?xml version="1.0" encoding="UTF-8"?><project name="Design I - Les Requins" company="" webLink="http://" view-date="2019-02-25" view-index="0" gantt-divider-location="539" resource-divider-location="300" version="2.8.9" locale="fr">
     <description/>
     <view zooming-state="default:4" id="gantt-chart">
-        <field id="tpd3" name="Nom" width="230" order="0"/>
-        <field id="tpd4" name="Date de début" width="106" order="1"/>
-        <field id="tpd5" name="Date de fin" width="99" order="2"/>
-        <field id="tpd8" name="Responsable" width="85" order="3"/>
+        <field id="tpd3" name="Nom" width="208" order="0"/>
+        <field id="tpd4" name="Date de début" width="97" order="1"/>
+        <field id="tpd5" name="Date de fin" width="91" order="2"/>
+        <field id="tpd8" name="Responsable" width="78" order="3"/>
+        <field id="tpd7" name="Avancée" width="46" order="4"/>
         <option id="taskLabelUp" value="name"/>
         <option id="taskLabelLeft" value="resources"/>
-        <timeline><![CDATA[73,153,534,173,156]]></timeline>
+        <timeline><![CDATA[534,156,73,153,173]]></timeline>
         <option id="color.recent"><![CDATA[#000000 #ff0000 #ff0033]]></option>
     </view>
     <view id="resource-table">
@@ -38,7 +39,7 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="28" name="Projet Global" color="#000000" meeting="false" start="2019-01-17" duration="91" complete="64" thirdDate="2019-01-16" thirdDate-constraint="0" expand="true">
+        <task id="28" name="Projet Global" color="#000000" meeting="false" start="2019-01-17" duration="91" complete="67" thirdDate="2019-01-16" thirdDate-constraint="0" expand="true">
             <task id="71" name="G02" color="#8cb6ce" meeting="false" start="2019-01-17" duration="6" complete="85" thirdDate="2019-01-16" thirdDate-constraint="0" expand="false">
                 <depend id="72" type="2" difference="0" hardness="Strong"/>
                 <task id="254" name="OJ" color="#8cb6ce" meeting="false" start="2019-01-17" duration="6" complete="100" thirdDate="2019-01-14" thirdDate-constraint="0" expand="true"/>
@@ -130,7 +131,7 @@
             <task id="354" name="Remise GestionG11" color="#8cb6ce" meeting="true" start="2019-03-27" duration="0" complete="0" thirdDate="2019-03-04" thirdDate-constraint="0" expand="true"/>
             <task id="86" name="G12" color="#8cb6ce" meeting="false" start="2019-03-28" duration="6" complete="0" thirdDate="2019-01-16" thirdDate-constraint="0" expand="true"/>
             <task id="357" name="Remise GestionG12" color="#8cb6ce" meeting="true" start="2019-04-03" duration="0" complete="0" thirdDate="2019-03-04" thirdDate-constraint="0" expand="true"/>
-            <task id="114" name="Rapport" color="#8cb6ce" meeting="false" start="2019-01-25" duration="83" complete="54" thirdDate="2019-01-14" thirdDate-constraint="0" expand="true">
+            <task id="114" name="Rapport" color="#8cb6ce" meeting="false" start="2019-01-25" duration="83" complete="59" thirdDate="2019-01-14" thirdDate-constraint="0" expand="true">
                 <task id="119" name="Introduction" color="#8cb6ce" meeting="false" start="2019-01-25" duration="3" complete="100" thirdDate="2019-01-14" thirdDate-constraint="0" expand="true">
                     <depend id="125" type="2" difference="0" hardness="Strong"/>
                 </task>
@@ -154,17 +155,17 @@
                 <task id="80" name="Remise rapport version V1" color="#8cb6ce" meeting="true" start="2019-02-21" duration="0" complete="0" thirdDate="2019-01-16" thirdDate-constraint="0" priority="2" expand="true">
                     <depend id="84" type="2" difference="0" hardness="Strong"/>
                 </task>
-                <task id="135" name="Conceptualisation et analyse de faisabilité" color="#8cb6ce" meeting="false" start="2019-02-28" duration="21" complete="77" thirdDate="2019-01-28" thirdDate-constraint="0" expand="true">
+                <task id="135" name="Conceptualisation et analyse de faisabilité" color="#8cb6ce" meeting="false" start="2019-02-28" duration="21" complete="97" thirdDate="2019-01-28" thirdDate-constraint="0" expand="true">
                     <depend id="138" type="2" difference="0" hardness="Strong"/>
                     <task id="462" name="Recherche des concepts" color="#8cb6ce" meeting="false" start="2019-02-28" duration="14" complete="100" thirdDate="2019-02-21" thirdDate-constraint="0" expand="true">
                         <depend id="451" type="1" difference="0" hardness="Strong"/>
                     </task>
-                    <task id="451" name="Rédaction" color="#8cb6ce" meeting="false" start="2019-02-28" duration="14" complete="30" thirdDate="2019-02-21" thirdDate-constraint="0" expand="true">
+                    <task id="451" name="Rédaction" color="#8cb6ce" meeting="false" start="2019-02-28" duration="14" complete="100" thirdDate="2019-02-21" thirdDate-constraint="0" expand="true">
                         <depend id="84" type="2" difference="0" hardness="Strong"/>
                     </task>
                     <task id="474" name="Révision des critères" color="#8cb6ce" meeting="false" start="2019-03-14" duration="4" complete="100" thirdDate="2019-02-21" thirdDate-constraint="0" expand="true"/>
                     <task id="494" name="Diagramme Fonctionnel" color="#8cb6ce" meeting="false" start="2019-03-14" duration="7" complete="100" thirdDate="2019-02-25" thirdDate-constraint="0" expand="true"/>
-                    <task id="490" name="Rédaction" color="#8cb6ce" meeting="false" start="2019-03-14" duration="7" complete="100" thirdDate="2019-02-25" thirdDate-constraint="0" expand="true">
+                    <task id="490" name="Rédaction" color="#8cb6ce" meeting="false" start="2019-03-14" duration="7" complete="100" thirdDate="2019-02-25" thirdDate-constraint="0" expand="false">
                         <task id="492" name="Capter les informations sur les poissons" color="#8cb6ce" meeting="false" start="2019-03-14" duration="7" complete="100" thirdDate="2019-02-25" thirdDate-constraint="0" expand="true"/>
                         <task id="497" name="Alimenter le capteur" color="#8cb6ce" meeting="false" start="2019-03-14" duration="7" complete="100" thirdDate="2019-02-25" thirdDate-constraint="0" expand="true"/>
                         <task id="499" name="Acheminer les information au centre de contrôle" color="#8cb6ce" meeting="false" start="2019-03-14" duration="7" complete="100" thirdDate="2019-02-25" thirdDate-constraint="0" expand="true"/>
