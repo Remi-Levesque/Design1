@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><project name="Design I - Les Requins" company="" webLink="http://" view-date="2019-03-25" view-index="0" gantt-divider-location="539" resource-divider-location="300" version="2.8.10" locale="fr">
     <description/>
-    <view zooming-state="default:4" id="gantt-chart">
+    <view zooming-state="default:2" id="gantt-chart">
         <field id="tpd3" name="Nom" width="208" order="0"/>
         <field id="tpd4" name="Date de début" width="97" order="1"/>
         <field id="tpd5" name="Date de fin" width="91" order="2"/>
         <field id="tpd8" name="Responsable" width="78" order="3"/>
         <field id="tpd7" name="Avancée" width="46" order="4"/>
-        <timeline><![CDATA[153,73,534,156,173]]></timeline>
+        <timeline><![CDATA[156,73,534,173,153]]></timeline>
         <option id="color.recent"><![CDATA[#000000 #ff0000 #ff0033]]></option>
     </view>
     <view id="resource-table">
@@ -287,7 +287,7 @@
         <allocation task-id="499" resource-id="2" function="Default:1" responsible="true" load="30.0"/>
         <allocation task-id="507" resource-id="2" function="Default:1" responsible="true" load="20.0"/>
         <allocation task-id="534" resource-id="2" function="Default:1" responsible="false" load="10.0"/>
-        <allocation task-id="546" resource-id="2" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="546" resource-id="2" function="Default:1" responsible="true" load="50.0"/>
         <allocation task-id="581" resource-id="2" function="Default:0" responsible="true" load="50.0"/>
         <allocation task-id="151" resource-id="3" function="Default:0" responsible="false" load="100.0"/>
         <allocation task-id="156" resource-id="3" function="Default:0" responsible="true" load="20.0"/>
@@ -316,7 +316,7 @@
         <allocation task-id="503" resource-id="4" function="Default:0" responsible="true" load="25.0"/>
         <allocation task-id="505" resource-id="4" function="Default:0" responsible="true" load="25.0"/>
         <allocation task-id="509" resource-id="4" function="Default:0" responsible="true" load="30.0"/>
-        <allocation task-id="545" resource-id="4" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="545" resource-id="4" function="Default:0" responsible="true" load="50.0"/>
         <allocation task-id="548" resource-id="4" function="Default:0" responsible="true" load="0.0"/>
         <allocation task-id="581" resource-id="4" function="Default:0" responsible="false" load="50.0"/>
     </allocations>
