@@ -1,0 +1,28 @@
+Critères				Procédure				Hypothèse
+
+Durée vie alim.				données fabric.				Info disponible sur Google
+
+Acheminer infos				Protocole WiFi				IEEE
+
+Précision logiciel			Études autres projets			Info disponible sur Google	*** Nouveau barème: Log Loss ***
+					(rapports préexistants)
+
+Utili. interface			Nielson-Mulich				API (aller sur les sites de plateformes de développement)
+
+Identification				Possibilité entrainement logic.		Tout réseaux sont en mesure d'ident. 5 poissons, le nb maximal dépend du coût
+
+Capacité stockage			données fabric.				Info disponible sur Google
+
+Fiabilité syst.sécurité			Documentation experts			Certains syst. sécurité dépendent du coût investi
+					Spécialiste sécurité
+
+Analyse état syst.			Fonctionnalité (vitesse, plateformes)	API
+					Compatibilité mobile, site web, etc..
+
+
+
+Besoins et objectif - Vincent
+Critère - Jé
+
+Conceptualisation: Chacun corrige sa partie
+					
